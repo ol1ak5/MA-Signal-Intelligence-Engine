@@ -125,18 +125,18 @@ python3 run.py "Find buyers for a distressed German fiber-optic company"
 ---------------------------------------------------------
 M&A SIGNAL INTELLIGENCE ENGINE - PIPELINE SUMMARY
 ---------------------------------------------------------
-Run ID  : run_20260703_212918
+Run ID  : run_XXXXXXXX_XXXXXX
 Target  : 500MW Solar PV Portfolio
 ---------------------------------------------------------
   Agent 1 - News Ingestion            signals retrieved
   Agent 2 - Signal Extraction         events classified
-  Agent 3 - Buyer Profiling           5 buyer profiles built
-  Agent 4 - Deal Matching             5 buyers scored (0 excluded)
-    Top buyer: Masdar (score: 1.0)
+  Agent 3 - Buyer Profiling           XX buyer profiles built
+  Agent 4 - Deal Matching             XX buyers scored (XX excluded)
+    Top buyer: XXX (score: X.X)
   Agent 5 - Strategy                  recommendation generated
 ---------------------------------------------------------
-Google Search calls           6
-Total latency                 218725ms
+Google Search calls           XX
+Total latency                 XXXXXXms
 ---------------------------------------------------------
 ```
 
