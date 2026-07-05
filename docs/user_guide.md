@@ -11,8 +11,8 @@ runs from the terminal via a single entrypoint, `run.py` (no `adk web` needed).
 
 ## 1. What it does (the pipeline)
 
-A request flows through five agents in sequence (an ADK `SequentialAgent`;
-buyer profiling additionally runs inside an ADK `LoopAgent` that retries it
+A request flows through five agents in sequence (an ADK `SequentialAgent`.
+Buyer profiling additionally runs inside an ADK `LoopAgent` that retries it
 once if a flaky model turn returns empty output):
 
 | # | Agent | Role | LLM? |
