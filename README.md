@@ -534,7 +534,7 @@ Rather than replacing M&A team judgment, the engine amplifies it. It handles the
 
 ## 🎥 Demo Video
 
-📺 **Watch the Demo on YouTube**
+📺 **[Watch the Demo on YouTube](https://youtu.be/8YsdOT6R3fs)**
 
 The demo covers:
 - The M&A buyer targeting problem and why it matters
