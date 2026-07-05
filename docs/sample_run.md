@@ -5,7 +5,7 @@ system produces. This is the **built-in example target** (run `python3 run.py`
 and press Enter):
 
 ```text
-Target: Find potential buyers for a 500MW Solar PV Portfolio in Spain
+Target: 500MW Solar PV Portfolio in Spain
 ```
 
 Note: buyers, figures and deals below are what the live web-search agents
