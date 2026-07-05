@@ -5,7 +5,7 @@
 
 ## 📌 One-Liner
 
-> *An AI multi-agent system that reads real-time market news to identify and rank the most likely buyers for any asset, helping M&A teams to focus on the acquirers who matter.*
+> *A multi-agent system turning fragmented M&A signals into actionable buyer intelligence, from data ingestion to strategic recommendations.*
 
 ---
 
