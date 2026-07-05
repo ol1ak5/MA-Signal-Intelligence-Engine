@@ -562,7 +562,7 @@ The demo covers:
 
 Copyright © 2026 Olga Aksenova.
 
-The code in this repository is licensed under the **Apache License, Version 2.0** – see
+The code in this repository is licensed under the **[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)** – see
 [LICENSE.md](LICENSE.md) for the full text and [NOTICE.md](NOTICE.md) for attribution.
 
 ---
