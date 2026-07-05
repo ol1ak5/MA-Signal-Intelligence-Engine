@@ -42,7 +42,7 @@ ADK's default summarizer).
 |------|--------------|-----------------|
 | **Python 3** | 3.11.5 | Runs the whole project. Use `python3` (not `python`) on macOS. |
 | **pip** | 26.1.2 | Installs the Python packages below. |
-| **uv** *(optional)* | 0.11.21 | Faster installer/runner used in development. Not required — `pip` works. |
+| **uv** *(optional)* | 0.11.21 | Faster installer/runner used in development. Not required – `pip` works. |
 | **adk** (CLI) | 2.2.0 | Comes bundled with `google-adk`; useful for interactive poking, but **not** how we run the pipeline. |
 
 You also need a **Google AI Studio API key** (free) – see §4.
