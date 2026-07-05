@@ -33,7 +33,7 @@
 
 M&A is fundamentally a **signal interpretation problem under uncertainty**.
 
-Deal teams fail not because they lack buyers, but because:
+M&A teams fail not because they lack buyers, but because:
 
 - They contact **the wrong buyers** at the wrong time
 - They rely on **static relationship maps** that do not reflect current strategic shifts
