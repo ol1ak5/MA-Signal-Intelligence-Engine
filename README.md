@@ -360,8 +360,7 @@ multiple: N/A
 | `financial_capacity` | 15% | 1.0 strong; 0.6 moderate; 0.2 weak (also hard-excluded); unknown → deal-activity proxy (see below) |
 | `expansion_mode` | 15% | 1.0 acquiring; 0.5 neutral; 0.0 divesting/deleveraging |
 
-#### **Financial capacity:**
-Weak = unprofitable (negative last-year EBITDA or distress) – slow or slightly negative growth only makes a profitable buyer `moderate`, never `weak`.
+#### **Financial capacity:** weak = unprofitable (negative last-year EBITDA or distress) – slow or slightly negative growth only makes a profitable buyer `moderate`, never `weak`.
 
 **Size fit logic:** all the asset classes are sized in EUR, except for renewable portfolios (MW capacity if available). Buyers announcing investment plans earn 1.0 if `investment_plan_eur_m` covers the target's size.
 
