@@ -98,7 +98,7 @@ The engine authenticates to Gemini with an **AI Studio API key** (not Vertex AI)
 
 The Gemini **free tier allows only 5 requests per minute** (plus a small daily
 quota) for `gemini-2.5-flash`, **per Google Cloud project** (not per key). A
-full pipeline run makes **~15–25 model calls** (five agents plus the nested
+full pipeline run makes **~15-25 model calls** (five agents plus the nested
 web-search calls fired by buyer profiling), so a free-tier run will hit
 `429 RESOURCE_EXHAUSTED` before it finishes – every time, not occasionally.
 
@@ -130,7 +130,7 @@ Type your request in plain language, press Enter.
 Run `python3 run.py` and just **press Enter** at the prompt – it runs the
 default target (a 500MW Solar PV Portfolio in Spain). No extra cost.
 
-### ⚠️ Writing a built-in example - important
+### ⚠️ Writing a built-in example – important
 
 When describing the acquisition target, include as much detail as possible
 (company name, sector, country, region, size, and any relevant characteristics).
