@@ -30,7 +30,7 @@ scoring), `skills/` (anti-hallucination rules), `memory/` (precedent-deal store)
 **Context compaction:** the orchestrator's `App` also enables context
 compaction via a **deterministic, no-API summarizer** (`orchestrator/compaction.py`).
 As events accumulate during a run, it condenses older ones into a single event —
-preserving each agent's text while truncating bulky tool output — to keep the
+preserving each agent's text while truncating bulky tool output – to keep the
 context focused. It is intentionally LLM-free so it adds no model calls (unlike
 ADK's default summarizer).
 
