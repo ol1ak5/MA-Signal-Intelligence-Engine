@@ -521,15 +521,15 @@ Rather than replacing M&A team judgment, the engine amplifies it. It handles the
 
 ### Key Strengths
 
-**Hybrid intelligence.** Gemini 2.5 Flash handles language understanding, signal interpretation, and strategy narrative. Python handles the math. Scoring is fully deterministic and auditable: given the same buyer profiles, the same evidence always produces the same ranking. The candidate pool itself is live — it reflects the market news at run time, and grows more informed as the memory bank accumulates precedents — so the recommendation list may vary between runs while the judgment behind it never does.
+1. **Hybrid intelligence.** Gemini 2.5 Flash handles language understanding, signal interpretation, and strategy narrative. Python handles the math. Scoring is fully deterministic and auditable: given the same buyer profiles, the same evidence always produces the same ranking. The candidate pool itself is live — it reflects the market news at run time, and grows more informed as the memory bank accumulates precedents — so the recommendation list may vary between runs while the judgment behind it never does.
 
-**Persistent transaction memory.** The memory bank compounds across pipeline runs. After multiple asset searches, the engine carries a richer picture of each buyer's sector focus, geographic preferences, and deal frequency, improving targeting accuracy over time.
+2. **Persistent transaction memory.** The memory bank compounds across pipeline runs. After multiple asset searches, the engine carries a richer picture of each buyer's sector focus, geographic preferences, and deal frequency, improving targeting accuracy over time.
 
-**Full observability.** Every run produces a structured decision trace with per-agent latency, counts, and buyer scores. There are no black boxes: every recommendation is traceable to its inputs.
+3. **Full observability.** Every run produces a structured decision trace with per-agent latency, counts, and buyer scores. There are no black boxes: every recommendation is traceable to its inputs.
 
-**Hallucination guardrails.** Anti-hallucination rules are embedded into every LLM agent's instruction set. Agents are prohibited from inventing financial figures or filling fields with guesses. All data must be sourced from real-time search results or passed explicitly from a prior agent.
+4. **Hallucination guardrails.** Anti-hallucination rules are embedded into every LLM agent's instruction set. Agents are prohibited from inventing financial figures or filling fields with guesses. All data must be sourced from real-time search results or passed explicitly from a prior agent.
 
-**Tested by evaluation.** A dedicated eval suite validates the deterministic core (scoring, JSON parsing, memory) and the model-based extraction, with saved, timestamped evidence for every run.
+5. **Tested by evaluation.** A dedicated eval suite validates the deterministic core (scoring, JSON parsing, memory) and the model-based extraction, with saved, timestamped evidence for every run.
 
 ---
 
