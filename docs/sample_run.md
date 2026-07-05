@@ -12,818 +12,749 @@ Note: buyers, figures and deals below are what the live web-search agents
 returned on the run date. They illustrate the pipeline, not investment advice.
 
 ```text
-2026-07-04 09:42:35,668 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:18:43,878 - INFO - Plugin 'ma_tracing' registered.
 Describe the acquisition target (or press Enter for the built-in example):
 > 
 
 No request given - running the built-in example target.
 
-2026-07-04 09:42:37,065 - INFO - [Agent 1 - News Ingestion] started
-2026-07-04 09:42:37,282 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:42:37,283 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:42:58,095 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:42:58,121 - INFO - Response received from the model.
+2026-07-05 17:18:47,093 - INFO - [Agent 1 - News Ingestion] started
+2026-07-05 17:18:47,327 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:18:47,328 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:19:04,123 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:04,135 - INFO - Response received from the model.
 
-news_ingestion_agent
-Here are 10 distinct potential buyers for a 500MW Solar PV Portfolio in Spain, based on recent M&A activities and investment plans:
+[news_ingestion_agent]
+Here are 10 distinct buyers for a 500MW Solar PV Portfolio in Spain, based on recent M&A activities, stated acquisition intentions, and major investment plans:
 
-1.  1.  Enel Green Power España (EGPE) / Endesa (Enel Group)
-    Enel Green Power España (EGPE) acquired a 519 MW photovoltaic portfolio, comprising eleven projects in Huelva, Spain, from Spanish developer Arena Power. The total investment for the acquisition and construction of these solar farms is approximately EUR 350 million. Construction was anticipated to start in 2022 and operations in 2024. Additionally, Enel (through its subsidiary Endesa) partnered with Masdar in December 2024, selling a 49.99% stake in a 2 GW operational photovoltaic portfolio in Spain for approximately EUR 817 million. The portfolio's total enterprise value was around EUR 1.7 billion.
+1.  Ingka Group (IKEA's parent company)
+    Ingka Group expanded its photovoltaic presence in Iberia by acquiring its first two solar parks in Spain in June 2026. These acquisitions, which include the operational "La Oliva" solar farm in Villasequilla (Toledo) and a project under development in Los Alcázares (Murcia), are expected to generate 106 GWh of renewable electricity annually once fully operational. Ingka Group is also restructuring and expanding its existing renewable assets in the region, including hybridizing a wind farm in Portugal with solar PV capacity.
 
-2.  Repsol
-    In February 2023, Repsol acquired three wind farms and two solar plants from ABO Wind, adding 250 MW of renewable assets to its Spanish portfolio. More recently, in June 2026, Repsol partnered with Masdar, which acquired a 49.99% stake in a 705 MW operational renewables portfolio in Spain, including 303 MW of solar PV. The transaction valued the entire portfolio at EUR 849 million.
+2.  Matrix Renewables
+    Backed by TPG Rise, Matrix Renewables successfully connected two new renewable energy projects, Cruz de los Caminos and Piedra de la Sal, to the Spanish grid in May 2026. This achievement increased the company's operational portfolio in Spain to 15 interconnected renewable energy projects, totaling 691 MW of installed capacity. These projects are supported by a long-term Power Purchase Agreement (PPA) with Merck.
 
-3.  TotalEnergies
-    TotalEnergies acquired 65% of the 59 MW "Campos del Río" solar project from Soltec in Murcia, Spain, through a co-development agreement dated July 3, 2025. The company also commissioned a 59 MWp solar farm in Toledo, Spain, in January 2026, which involved an investment exceeding EUR 40 million. TotalEnergies has an ambitious strategy in Spain, with a portfolio of over 5 GW of solar projects under development by 2025 through various agreements.
+3.  Norges Bank
+    In September 2025, Norges Bank partnered with Iberdrola España for a new 316 MW solar farm in Salamanca, with a €200 million investment. This follows previous significant investments, including the purchase of a 49% interest in Iberdrola's 644 MW Spanish solar energy portfolio for €203 million in April 2024, and another 49% stake in a solar and onshore wind asset portfolio from Iberdrola for €307 million in January 2024.
 
-4.  Ingka Group (IKEA Retailer)
-    Ingka Group, the largest IKEA retailer and a clean energy investor, entered the Spanish solar market in June 2026 by acquiring its first two solar parks. These included the operational "La Oliva" solar farm in Villasequilla (Toledo) and a project under development in Los Alcázares (Murcia), which together are expected to generate 106 GWh of renewable electricity annually once fully operational.
+4.  Schroders Greencoat
+    In early 2025, Schroders Greencoat formed a strategic partnership with Repsol, acquiring a 49% stake in a 400 MW Spanish renewable energy portfolio. This portfolio includes 8 wind farms (300 MW) and 2 solar plants (100 MW) located in Palencia, Northern Spain, with all projects expected to be fully operational by mid-2025.
 
-5.  Velto Renewables
-    In September 2025, Velto Renewables announced its acquisition of a 260 MW portfolio of regulated solar projects across Spain. This portfolio consisted of 163 MW from Helia II FCR (a vehicle by Bankinter Investment SGEIC and Plenium Partners) and an additional 97 MW from Plenium Partners. The estimated enterprise value for the combined transaction was EUR 1.1 billion.
+5.  TotalEnergies
+    TotalEnergies inaugurated its largest European solar project in Seville in March 2025. This cluster comprises five solar power plants with a total installed capacity of 263 MW, capable of producing 515 GWh of renewable electricity per year. The company aims to increase its gross renewable electricity generation capacity to 35 GW by the end of 2025.
 
-6.  Masdar
-    Masdar has been highly active in the Spanish solar market, particularly through partnerships. In December 2024, Masdar acquired a 49.99% stake in a 2 GW operational photovoltaic portfolio from Enel's Endesa in Spain for approximately EUR 817 million, valuing the entire portfolio at around EUR 1.7 billion. Furthermore, in June 2026, Masdar acquired a 49.99% stake in a 705 MW operational renewables portfolio from Repsol, which included 303 MW of solar PV, for EUR 849 million.
+6.  Iberdrola
+    A leading Spanish energy group, Iberdrola commissioned a 316 MW solar farm in Salamanca in September 2025, representing a €200 million investment made in partnership with Norges Bank. This project contributes to Iberdrola's growing renewable capacity in Spain, which had surpassed 890 MW from six operational PV facilities in the Castile and León region by 2022.
 
-7.  IST (Swiss Pension Fund Investor)
-    Swiss pension fund investor IST, through its Spanish subsidiary Terralys Renovables, completed the acquisition of a 91 MW solar portfolio from Bestinver in Spain in February 2026. The transaction was valued at over EUR 330 million.
+7.  Qualitas Energy
+    Qualitas Energy, a global institutional fund, closed its Qualitas Energy V fund in November 2023 at EUR 2.4 billion, exceeding its initial hard cap. This fund is one of Europe's largest renewable energy funds and the biggest private markets fund in Spain. Its strategy includes investing in brownfield and greenfield solar PV, among other renewable assets, in Spain and other OECD countries.
 
-8.  Naturgy
-    In May 2023, Naturgy acquired 100% of ASR Wind from infrastructure fund Ardian for EUR 650 million. This acquisition included 422 MW of operational wind farms and 435 MW of photovoltaic solar parks under hybridisation that were in development. More recently, in April 2026, Naturgy commissioned six new solar farms in Andalusia with a combined capacity of 300 MW, representing an investment of over EUR 260 million.
+8.  EDP Renewables (EDPR)
+    EDPR is a prominent leader in the renewable energy sector in Spain, with a robust development pipeline. In early 2026, the company commissioned two new photovoltaic plants in Navarre, Cierzo II (42 MW) and Cierzo IV (47.5 MW), which collectively feature over 160,000 solar modules.
 
-9.  Plenitude (Eni's Renewable Energy Subsidiary)
-    Plenitude, Eni's renewable energy subsidiary, has significantly expanded its presence in Spain. In June 2026, it announced the start of production at its 220 MW Villarino photovoltaic plant in Salamanca, Spain. This follows the commissioning of a 150 MW solar PV plant in Spain in December 2025, bringing Plenitude's total installed capacity in Spain to nearly 1.5 GW.
+9.  Lightsource BP
+    Lightsource BP is identified as a leading independent power producer (IPP) specializing in utility-scale solar PV and energy storage solutions across Europe, including Spain. As a wholly-owned subsidiary of BP, the company leverages its financial strength and expertise to develop, finance, build, and operate renewable energy projects, actively seeking opportunities to expand its portfolio in key strategic markets like Spain.
 
-10. Iberdrola
-    Iberdrola is a leading player in Spain's renewable energy sector, with an extensive portfolio and ambitious expansion plans. The company had 17,571 MW of installed renewable capacity in Spain as of 2022 and aims to reach 25,000 MW by 2025, with a commitment to 4,900 MW of photovoltaic capacity specifically in Spain by the same year. Notable projects include the 590 MW Francisco Pizarro Solar Plant and the 500 MW Núñez de Balboa Solar Plant in Extremadura.
-
-2026-07-04 09:42:58,166 - INFO - [Agent 1 - News Ingestion] completed - latency: 21101ms
-2026-07-04 09:42:58,166 - INFO - [Agent 1 - News Ingestion] trace recorded
-2026-07-04 09:42:58,167 - INFO - [Agent 2 - Signal Extraction] started
+10. Acciona Energía
+    Acciona Energía is a major player in Spain's renewable energy market, recognized for its substantial assets and active role in project development across solar and wind technologies. The company is involved in M&A activities within the sector and, as of November 2025, was mentioned in recent deals exemplifying the potential of renewable energy assets in Spain.
+2026-07-05 17:19:04,150 - INFO - [Agent 1 - News Ingestion] completed - latency: 17056ms
+2026-07-05 17:19:04,150 - INFO - [Agent 1 - News Ingestion] trace recorded
+2026-07-05 17:19:04,151 - INFO - [Agent 2 - Signal Extraction] started
 /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/google/adk/tools/function_tool.py:95: UserWarning: [EXPERIMENTAL] feature FeatureName.JSON_SCHEMA_FOR_FUNC_DECL is enabled.
   build_function_declaration(
-2026-07-04 09:42:58,620 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:16,255 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:16,261 - INFO - Response received from the model.
+2026-07-05 17:19:04,257 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:15,898 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:15,903 - INFO - Response received from the model.
 
 [signal_extraction_agent]
-Here are the most likely buyers for the 500MW Solar PV Portfolio in Spain, ranked from most to least likely:
+buyer: Ingka Group
+seller: N/A
+target: "La Oliva" solar farm in Villasequilla (Toledo) and a project in Los Alcázares (Murcia)
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: acquisition
+multiple: N/A (no financial figures provided for the acquisition)
+strategic_driver: market_expansion
+urgency: low
 
-1.  Enel Green Power España (EGPE) / Endesa (Enel Group)
-    Justification: Directly acquired a 519 MW photovoltaic portfolio in Huelva, Spain, for approximately EUR 350 million (acquisition and construction), which is very similar in size and value to the target (500MW, ~EUR 450M). Also involved in a larger 2 GW operational photovoltaic portfolio deal.
-    Source: news_ingestion_agent
+buyer: Matrix Renewables
+seller: N/A
+target: Cruz de los Caminos and Piedra de la Sal renewable energy projects (691 MW operational portfolio)
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: investment_plan
+multiple: N/A (no financial figures for an investment plan)
+strategic_driver: market_expansion
+urgency: low
 
-2.  Masdar
-    Justification: Highly active in large-scale solar PV acquisitions in Spain, including acquiring a 49.99% stake in a 2 GW operational photovoltaic portfolio from Enel's Endesa for approximately EUR 817 million (total EV ~EUR 1.7 billion) and a 49.99% stake in a 705 MW operational renewables portfolio (303 MW solar PV) from Repsol for EUR 849 million. These demonstrate a clear appetite for large solar portfolios.
-    Source: news_ingestion_agent
+buyer: Norges Bank
+seller: Iberdrola España
+target: 316 MW solar farm in Salamanca
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: acquisition
+multiple: 200 EUR M
+strategic_driver: market_expansion
+urgency: low
 
-3.  Iberdrola
-    Justification: A leading player in Spain's renewable energy sector with ambitious expansion plans, aiming for 4,900 MW of photovoltaic capacity in Spain by 2025. They have notable projects of similar scale, such as the 590 MW Francisco Pizarro Solar Plant and the 500 MW Núñez de Balboa Solar Plant.
-    Source: news_ingestion_agent
+buyer: Norges Bank
+seller: Iberdrola
+target: 644 MW Spanish solar energy portfolio
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: minority_stake
+multiple: 203 EUR M
+strategic_driver: market_expansion
+urgency: low
 
-4.  Naturgy
-    Justification: Acquired 100% of ASR Wind, which included 435 MW of photovoltaic solar parks under hybridisation, for EUR 650 million. More recently, commissioned six new solar farms in Andalusia with a combined capacity of 300 MW for over EUR 260 million. This indicates a strong focus on acquiring and developing significant solar PV assets.
-    Source: news_ingestion_agent
+buyer: Norges Bank
+seller: Iberdrola
+target: solar and onshore wind asset portfolio
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: minority_stake
+multiple: 307 EUR M
+strategic_driver: market_expansion
+urgency: low
 
-5.  Repsol
-    Justification: Active in solar PV acquisitions in Spain, having acquired 250 MW of renewable assets (including solar) in February 2023. Also partnered with Masdar in a deal involving 303 MW of solar PV within a 705 MW operational renewables portfolio.
-    Source: news_ingestion_agent
+buyer: Schroders Greencoat
+seller: Repsol
+target: 400 MW Spanish renewable energy portfolio (8 wind farms, 2 solar plants)
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: minority_stake
+multiple: N/A (no financial figures for the stake acquisition)
+strategic_driver: market_expansion
+urgency: low
 
-6.  Plenitude (Eni's Renewable Energy Subsidiary)
-    Justification: Has significantly expanded its presence in Spain, with total installed capacity nearing 1.5 GW, including commissioning 220 MW and 150 MW solar PV plants. While these are development/commissioning, their rapid growth indicates a strong strategic interest in large-scale solar PV in Spain.
-    Source: news_ingestion_agent
+buyer: TotalEnergies
+seller: N/A
+target: Largest European solar project in Seville (263 MW, five solar power plants)
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: investment_plan
+multiple: N/A (no financial figures for the investment)
+strategic_driver: market_expansion
+urgency: low
 
-7.  Velto Renewables
-    Justification: Acquired a 260 MW portfolio of regulated solar projects across Spain for an estimated enterprise value of EUR 1.1 billion. This demonstrates an appetite for substantial solar assets, though the MW capacity is about half of the target.
-    Source: news_ingestion_agent
+buyer: Iberdrola
+seller: N/A
+target: 316 MW solar farm in Salamanca
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: investment_plan
+multiple: 200 EUR M
+strategic_driver: market_expansion
+urgency: low
 
-8.  TotalEnergies
-    Justification: Has an ambitious strategy in Spain with a portfolio of over 5 GW of solar projects under development by 2025. While their recent *acquisitions* mentioned are smaller (59 MW), their overall strategic intent suggests they could be looking for larger acquisitions to meet their targets.
-    Source: news_ingestion_agent
+buyer: Qualitas Energy
+seller: N/A
+target: Investment in brownfield and greenfield solar PV and other renewable assets in Spain and OECD countries
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: investment_plan
+multiple: 2400 EUR M announced
+strategic_driver: market_expansion
+urgency: low
 
-9.  IST (Swiss Pension Fund Investor)
-    Justification: Acquired a 91 MW solar portfolio in Spain for over EUR 330 million. This shows an interest in the Spanish solar market, but the scale of their reported acquisition is smaller than the 500 MW target.
-    Source: news_ingestion_agent
+buyer: EDP Renewables (EDPR)
+seller: N/A
+target: Cierzo II (42 MW) and Cierzo IV (47.5 MW) photovoltaic plants in Navarre
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: investment_plan
+multiple: N/A (no financial figures for the investment)
+strategic_driver: market_expansion
+urgency: low
 
-10. Ingka Group (IKEA Retailer)
-    Justification: Entered the Spanish solar market by acquiring its first two solar parks, which are expected to generate 106 GWh annually. This represents a smaller scale of entry compared to the 500 MW target, suggesting they are at an earlier stage of large-scale solar acquisitions in Spain.
-Source: news_ingestion_agent
-2026-07-04 09:43:16,265 - INFO - [Agent 2 - Signal Extraction] completed - latency: 18098ms
-2026-07-04 09:43:16,265 - INFO - [Agent 2 - Signal Extraction] trace recorded
-2026-07-04 09:43:16,265 - INFO - [Agent 3 - Buyer Profiling] started
-2026-07-04 09:43:16,397 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:20,075 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:20,078 - INFO - Response received from the model.
-2026-07-04 09:43:20,087 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_country': 'Spain', 'sector': 'renewables', 'buyer': 'Enel Green Power España'}'
-2026-07-04 09:43:20,100 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_country': 'Spain', 'sector': 'renewables', 'buyer': 'Endesa'}'
-2026-07-04 09:43:20,101 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Enel Green Power España revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:43:20,103 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:43:20,113 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Endesa revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:43:20,114 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:43:20,119 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Enel Green Power España investment plans Spain solar PV'}'
-2026-07-04 09:43:20,120 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:43:20,122 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Endesa investment plans Spain solar PV'}'
-2026-07-04 09:43:20,123 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:43:20,243 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:20,243 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:43:20,246 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:20,247 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:43:20,249 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:20,250 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:43:20,252 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:20,253 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:43:29,159 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:29,164 - INFO - Response received from the model.
-2026-07-04 09:43:29,167 - INFO - Closing runner...
-2026-07-04 09:43:29,167 - INFO - Runner closed.
-2026-07-04 09:43:29,253 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:29,258 - INFO - Response received from the model.
-2026-07-04 09:43:29,262 - INFO - Closing runner...
-2026-07-04 09:43:29,262 - INFO - Runner closed.
-2026-07-04 09:43:29,684 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:29,690 - INFO - Response received from the model.
-2026-07-04 09:43:29,694 - INFO - Closing runner...
-2026-07-04 09:43:29,694 - INFO - Runner closed.
-2026-07-04 09:43:30,840 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:30,843 - INFO - Response received from the model.
-2026-07-04 09:43:30,846 - INFO - Closing runner...
-2026-07-04 09:43:30,846 - INFO - Runner closed.
-2026-07-04 09:43:31,007 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:40,608 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:40,624 - INFO - Response received from the model.
-/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydantic/main.py:475: UserWarning: Pydantic serializer warnings:
-  PydanticSerializationUnexpectedValue(Expected `GroundingMetadata` - serialized value may not be as expected [field_name='grounding_metadata', input_value={'groundingChunks': [{'we... solar projects Spain']}, input_type=dict])
-  return self.__pydantic_serializer__.to_python(
-2026-07-04 09:43:40,642 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'transaction_date': '2022', 'ev_mw': 674373.79, 'seller': 'Arena Power', 'target_name': '519 MW photovoltaic portfolio', 'news_source': 'news_ingestion_agent, 2022', 'ev_eur_m': 350, 'buyer': 'Enel Green Power España', 'sector': 'renewables', 'target_country': 'Spain', 'capacity_mw': 519, 'target_class': 'renewable_portfolio'}'
-2026-07-04 09:43:40,712 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_country': 'Spain', 'sector': 'renewables', 'buyer': 'Repsol'}'
-2026-07-04 09:43:40,714 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Repsol revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:43:40,715 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:43:40,716 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Repsol investment plans Spain solar PV'}'
-2026-07-04 09:43:40,717 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:43:41,042 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:41,042 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:43:41,049 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:41,050 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:43:49,751 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:49,760 - INFO - Response received from the model.
-2026-07-04 09:43:49,769 - INFO - Closing runner...
-2026-07-04 09:43:49,769 - INFO - Runner closed.
-2026-07-04 09:43:54,351 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:54,359 - INFO - Response received from the model.
-2026-07-04 09:43:54,361 - INFO - Closing runner...
-2026-07-04 09:43:54,362 - INFO - Runner closed.
-2026-07-04 09:43:54,511 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:43:59,982 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:43:59,990 - INFO - Response received from the model.
-/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydantic/main.py:475: UserWarning: Pydantic serializer warnings:
-  PydanticSerializationUnexpectedValue(Expected `GroundingMetadata` - serialized value may not be as expected [field_name='grounding_metadata', input_value={'groundingChunks': [{'we...sol solar farms Spain']}, input_type=dict])
-  return self.__pydantic_serializer__.to_python(
-2026-07-04 09:43:59,998 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_country': 'Spain', 'buyer': 'TotalEnergies', 'sector': 'renewables'}'
-2026-07-04 09:43:59,999 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'TotalEnergies revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:44:00,001 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:44:00,045 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'TotalEnergies investment plans Spain solar PV'}'
-2026-07-04 09:44:00,045 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:44:00,258 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:00,259 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:44:00,263 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:00,264 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:44:08,222 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:08,228 - INFO - Response received from the model.
-2026-07-04 09:44:08,231 - INFO - Closing runner...
-2026-07-04 09:44:08,231 - INFO - Runner closed.
-2026-07-04 09:44:08,789 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:08,799 - INFO - Response received from the model.
-2026-07-04 09:44:08,805 - INFO - Closing runner...
-2026-07-04 09:44:08,805 - INFO - Runner closed.
-2026-07-04 09:44:08,980 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:15,547 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:15,551 - INFO - Response received from the model.
-2026-07-04 09:44:15,557 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 184.63, 'currency': 'USD'}'
-2026-07-04 09:44:15,812 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 263.31, 'currency': 'USD'}'
-2026-07-04 09:44:15,813 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 218.95, 'currency': 'USD'}'
-2026-07-04 09:44:15,814 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 42.3, 'currency': 'USD'}'
-2026-07-04 09:44:15,814 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 71.6, 'currency': 'USD'}'
-2026-07-04 09:44:15,815 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 50, 'currency': 'USD'}'
-2026-07-04 09:44:15,816 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 9.853, 'currency': 'USD'}'
-2026-07-04 09:44:15,816 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 4.637, 'currency': 'USD'}'
-2026-07-04 09:44:15,817 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 12.825, 'currency': 'USD'}'
-2026-07-04 09:44:15,818 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'buyer': 'Ingka Group', 'sector': 'renewables', 'target_country': 'Spain'}'
-2026-07-04 09:44:16,144 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Ingka Group revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:44:16,145 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:44:16,148 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Ingka Group investment plans Spain solar PV'}'
-2026-07-04 09:44:16,148 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:44:16,255 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:16,255 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:44:16,258 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:16,258 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:44:22,406 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:22,410 - INFO - Response received from the model.
-2026-07-04 09:44:22,413 - INFO - Closing runner...
-2026-07-04 09:44:22,413 - INFO - Runner closed.
-2026-07-04 09:44:25,480 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:25,486 - INFO - Response received from the model.
-2026-07-04 09:44:25,490 - INFO - Closing runner...
-2026-07-04 09:44:25,490 - INFO - Runner closed.
-2026-07-04 09:44:25,610 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:30,703 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:30,706 - INFO - Response received from the model.
-2026-07-04 09:44:30,709 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'buyer': 'Velto Renewables', 'sector': 'renewables', 'target_country': 'Spain'}'
-2026-07-04 09:44:30,710 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Velto Renewables revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:44:30,711 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:44:30,712 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Velto Renewables investment plans Spain solar PV'}'
-2026-07-04 09:44:30,712 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:44:30,810 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:30,810 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:44:30,813 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:30,813 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:44:34,490 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:34,495 - INFO - Response received from the model.
-2026-07-04 09:44:34,500 - INFO - Closing runner...
-2026-07-04 09:44:34,501 - INFO - Runner closed.
-2026-07-04 09:44:36,951 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:36,959 - INFO - Response received from the model.
-2026-07-04 09:44:36,962 - INFO - Closing runner...
-2026-07-04 09:44:36,962 - INFO - Runner closed.
-2026-07-04 09:44:37,078 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:42,067 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:42,070 - INFO - Response received from the model.
-/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydantic/main.py:475: UserWarning: Pydantic serializer warnings:
-  PydanticSerializationUnexpectedValue(Expected `GroundingMetadata` - serialized value may not be as expected [field_name='grounding_metadata', input_value={'groundingChunks': [{'we...ure plans Spain solar']}, input_type=dict])
-  return self.__pydantic_serializer__.to_python(
-2026-07-04 09:44:42,075 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'capacity_mw': 260, 'target_class': 'renewable_portfolio', 'target_name': '260 MW portfolio of regulated solar projects', 'seller': 'Helia II FCR and Plenium Partners', 'sector': 'renewables', 'ev_mw': 4230769.23, 'buyer': 'Velto Renewables', 'target_country': 'Spain', 'transaction_date': '2025-09', 'ev_eur_m': 1100, 'news_source': 'news_ingestion_agent, September 2025'}'
-2026-07-04 09:44:42,098 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'buyer': 'Masdar', 'target_country': 'Spain', 'sector': 'renewables'}'
-2026-07-04 09:44:42,100 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Masdar revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:44:42,102 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:44:42,105 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Masdar investment plans Spain solar PV'}'
-2026-07-04 09:44:42,106 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:44:42,209 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:42,209 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:44:42,212 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:44:42,212 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:44:50,159 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:44:50,165 - INFO - Response received from the model.
-2026-07-04 09:44:50,167 - INFO - Closing runner...
-2026-07-04 09:44:50,167 - INFO - Runner closed.
-2026-07-04 09:45:03,024 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:03,028 - INFO - Response received from the model.
-2026-07-04 09:45:03,030 - INFO - Closing runner...
-2026-07-04 09:45:03,030 - INFO - Runner closed.
-2026-07-04 09:45:03,165 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:11,074 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:11,077 - INFO - Response received from the model.
-/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydantic/main.py:475: UserWarning: Pydantic serializer warnings:
-  PydanticSerializationUnexpectedValue(Expected `GroundingMetadata` - serialized value may not be as expected [field_name='grounding_metadata', input_value={'groundingChunks': [{'we... partners Spain solar']}, input_type=dict])
-  return self.__pydantic_serializer__.to_python(
-2026-07-04 09:45:11,082 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 3352.6, 'currency': 'AED'}'
-2026-07-04 09:45:11,083 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'currency': 'AED', 'amount': 621.4}'
-2026-07-04 09:45:11,084 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 716.51, 'currency': 'AED'}'
-2026-07-04 09:45:11,099 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'currency': 'AED', 'amount': 4198.254}'
-2026-07-04 09:45:11,100 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'currency': 'AED', 'amount': 682.032}'
-2026-07-04 09:45:11,101 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'currency': 'AED', 'amount': 1389.231}'
-2026-07-04 09:45:11,102 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'target_country': 'Spain', 'sector': 'renewables', 'target_name': '2 GW operational photovoltaic portfolio', 'transaction_date': '2024-12', 'ev_mw': 850000, 'buyer': 'Masdar', 'capacity_mw': 2000, 'target_class': 'renewable_portfolio', 'ev_eur_m': 1700, 'seller': 'Endesa', 'news_source': 'news_ingestion_agent, December 2024'}'
-2026-07-04 09:45:11,108 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'news_source': 'news_ingestion_agent, June 2026', 'ev_eur_m': 849, 'target_class': 'renewable_portfolio', 'seller': 'Repsol', 'sector': 'renewables', 'target_name': '705 MW operational renewables portfolio (incl. 303 MW solar PV)', 'target_country': 'Spain', 'buyer': 'Masdar', 'capacity_mw': 705, 'transaction_date': '2026-06', 'ev_mw': 1204255.32}'
-2026-07-04 09:45:11,111 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'transaction_date': '2025-10', 'ev_mw': 412556.05, 'buyer': 'Masdar', 'capacity_mw': 446, 'target_country': 'Spain', 'target_name': '446 MW solar farms', 'sector': 'renewables', 'seller': 'Enel Green Power España', 'target_class': 'renewable_portfolio', 'ev_eur_m': 184, 'news_source': 'news_ingestion_agent, October 2025'}'
-2026-07-04 09:45:11,114 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'sector': 'renewables', 'buyer': 'IST', 'target_country': 'Spain'}'
-2026-07-04 09:45:11,115 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'IST AG (Swiss Pension Fund) revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:45:11,150 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:45:11,154 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'IST AG (Swiss Pension Fund) investment plans Spain solar PV'}'
-2026-07-04 09:45:11,156 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:45:11,278 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:11,279 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:45:11,281 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:11,281 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:45:16,681 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:16,684 - INFO - Response received from the model.
-2026-07-04 09:45:16,687 - INFO - Closing runner...
-2026-07-04 09:45:16,687 - INFO - Runner closed.
-2026-07-04 09:45:17,844 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:17,853 - INFO - Response received from the model.
-2026-07-04 09:45:17,858 - INFO - Closing runner...
-2026-07-04 09:45:17,858 - INFO - Runner closed.
-2026-07-04 09:45:17,976 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:22,723 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:22,726 - INFO - Response received from the model.
-/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydantic/main.py:475: UserWarning: Pydantic serializer warnings:
-  PydanticSerializationUnexpectedValue(Expected `GroundingMetadata` - serialized value may not be as expected [field_name='grounding_metadata', input_value={'groundingChunks': [{'we...sion fund Spain solar']}, input_type=dict])
-  return self.__pydantic_serializer__.to_python(
-2026-07-04 09:45:22,731 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 10, 'currency': 'CHF'}'
-2026-07-04 09:45:22,732 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'ev_mw': 3626373.63, 'news_source': 'news_ingestion_agent, February 2026', 'capacity_mw': 91, 'target_class': 'renewable_portfolio', 'transaction_date': '2026-02', 'seller': 'Bestinver', 'sector': 'renewables', 'ev_eur_m': 330, 'buyer': 'IST (Swiss Pension Fund Investor)', 'target_country': 'Spain', 'target_name': '91 MW solar portfolio'}'
-2026-07-04 09:45:22,800 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'buyer': 'Naturgy', 'target_country': 'Spain', 'sector': 'renewables'}'
-2026-07-04 09:45:22,801 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Naturgy revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:45:22,802 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:45:22,804 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Naturgy investment plans Spain solar PV'}'
-2026-07-04 09:45:22,805 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:45:22,920 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:22,920 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:45:22,924 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:22,925 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:45:30,350 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:30,358 - INFO - Response received from the model.
-2026-07-04 09:45:30,362 - INFO - Closing runner...
-2026-07-04 09:45:30,362 - INFO - Runner closed.
-2026-07-04 09:45:31,939 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:31,944 - INFO - Response received from the model.
-2026-07-04 09:45:31,947 - INFO - Closing runner...
-2026-07-04 09:45:31,947 - INFO - Runner closed.
-2026-07-04 09:45:32,101 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:37,776 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:37,781 - INFO - Response received from the model.
-/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydantic/main.py:475: UserWarning: Pydantic serializer warnings:
-  PydanticSerializationUnexpectedValue(Expected `GroundingMetadata` - serialized value may not be as expected [field_name='grounding_metadata', input_value={'groundingChunks': [{'we...rgy investments Spain']}, input_type=dict])
-  return self.__pydantic_serializer__.to_python(
-2026-07-04 09:45:37,790 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'target_name': '435 MW photovoltaic solar parks (part of ASR Wind)', 'target_country': 'Spain', 'transaction_date': '2023-05', 'sector': 'renewables', 'ev_mw': 1494252.87, 'seller': 'Ardian', 'news_source': 'news_ingestion_agent, May 2023', 'ev_eur_m': 650, 'target_class': 'renewable_portfolio', 'buyer': 'Naturgy', 'capacity_mw': 435}'
-2026-07-04 09:45:37,805 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'buyer': 'Plenitude', 'sector': 'renewables', 'target_country': 'Spain'}'
-2026-07-04 09:45:37,810 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Plenitude (Eni) revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:45:37,810 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:45:37,812 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Plenitude (Eni) investment plans Spain solar PV'}'
-2026-07-04 09:45:37,813 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:45:37,949 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:37,950 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:45:37,954 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:37,955 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:45:46,378 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:46,385 - INFO - Response received from the model.
-2026-07-04 09:45:46,389 - INFO - Closing runner...
-2026-07-04 09:45:46,389 - INFO - Runner closed.
-2026-07-04 09:45:52,726 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:52,730 - INFO - Response received from the model.
-2026-07-04 09:45:52,732 - INFO - Closing runner...
-2026-07-04 09:45:52,732 - INFO - Runner closed.
-2026-07-04 09:45:52,870 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:57,437 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:45:57,440 - INFO - Response received from the model.
-/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pydantic/main.py:475: UserWarning: Pydantic serializer warnings:
-  PydanticSerializationUnexpectedValue(Expected `GroundingMetadata` - serialized value may not be as expected [field_name='grounding_metadata', input_value={'groundingChunks': [{'we...rgy Spain investments']}, input_type=dict])
-  return self.__pydantic_serializer__.to_python(
-2026-07-04 09:45:57,447 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_country': 'Spain', 'buyer': 'Iberdrola', 'sector': 'renewables'}'
-2026-07-04 09:45:57,449 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Iberdrola revenue EBITDA net debt 2021 2022 2023'}'
-2026-07-04 09:45:57,449 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:45:57,450 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Iberdrola investment plans Spain solar PV'}'
-2026-07-04 09:45:57,450 - INFO - Plugin 'ma_tracing' registered.
-2026-07-04 09:45:57,550 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:57,551 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:45:57,556 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:45:57,557 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:46:04,793 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:46:04,808 - INFO - Response received from the model.
-2026-07-04 09:46:04,816 - INFO - Closing runner...
-2026-07-04 09:46:04,816 - INFO - Runner closed.
-2026-07-04 09:46:06,156 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:46:06,305 - INFO - Response received from the model.
-2026-07-04 09:46:06,314 - INFO - Closing runner...
-2026-07-04 09:46:06,315 - INFO - Runner closed.
-2026-07-04 09:46:07,281 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:46:29,387 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:46:29,391 - INFO - Response received from the model.
+buyer: Lightsource BP
+seller: N/A
+target: Expansion of utility-scale solar PV and energy storage solutions portfolio
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: investment_plan
+multiple: N/A (no specific announced amount)
+strategic_driver: market_expansion
+urgency: low
+
+buyer: Acciona Energía
+seller: N/A
+target: Development of solar and wind technologies, M&A activities in the sector
+target_country: Spain
+target_class: renewable_portfolio
+target_sector: renewables
+event_type: investment_plan
+multiple: N/A (no specific announced amount or deal value)
+strategic_driver: market_expansion
+urgency: low
+2026-07-05 17:19:15,907 - INFO - [Agent 2 - Signal Extraction] completed - latency: 11756ms
+2026-07-05 17:19:15,908 - INFO - [Agent 2 - Signal Extraction] trace recorded
+2026-07-05 17:19:15,908 - INFO - [Agent 3 - Buyer Profiling] started
+2026-07-05 17:19:16,005 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:17,946 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:17,949 - INFO - Response received from the model.
+2026-07-05 17:19:17,952 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'sector': 'renewables', 'target_class': 'renewable_portfolio', 'target_country': 'Spain', 'buyer': 'Ingka Group'}'
+2026-07-05 17:19:18,044 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:19,380 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:19,383 - INFO - Response received from the model.
+2026-07-05 17:19:19,387 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Ingka Group revenue EBITDA net debt renewable energy investments Spain'}'
+2026-07-05 17:19:19,387 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:19:19,478 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:19,479 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:19:29,827 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:29,834 - INFO - Response received from the model.
+2026-07-05 17:19:29,837 - INFO - Closing runner...
+2026-07-05 17:19:29,837 - INFO - Runner closed.
+2026-07-05 17:19:29,979 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:34,023 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:34,028 - INFO - Response received from the model.
+2026-07-05 17:19:34,032 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'sector': 'renewables', 'buyer': 'Matrix Renewables', 'target_country': 'Spain', 'target_class': 'renewable_portfolio'}'
+2026-07-05 17:19:34,147 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:35,356 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:35,359 - INFO - Response received from the model.
+2026-07-05 17:19:35,369 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Matrix Renewables revenue EBITDA net debt investment plans Spain'}'
+2026-07-05 17:19:35,370 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:19:35,512 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:35,512 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:19:46,313 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:46,326 - INFO - Response received from the model.
+2026-07-05 17:19:46,329 - INFO - Closing runner...
+2026-07-05 17:19:46,329 - INFO - Runner closed.
+2026-07-05 17:19:46,435 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:51,131 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:51,134 - INFO - Response received from the model.
+2026-07-05 17:19:51,141 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_class': 'renewable_portfolio', 'buyer': 'Norges Bank', 'sector': 'renewables', 'target_country': 'Spain'}'
+2026-07-05 17:19:51,262 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:54,505 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:54,507 - INFO - Response received from the model.
+2026-07-05 17:19:54,511 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'ev_eur_m': 408.16, 'sector': 'renewables', 'target_name': '316 MW solar farm in Salamanca', 'target_country': 'Spain', 'news_source': 'news_ingestion_agent, September 2025', 'transaction_date': '2025-09', 'seller': 'Iberdrola España', 'target_class': 'renewable_portfolio', 'buyer': 'Norges Bank'}'
+2026-07-05 17:19:54,597 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:55,732 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:55,736 - INFO - Response received from the model.
+2026-07-05 17:19:55,740 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'sector': 'renewables', 'buyer': 'Norges Bank', 'target_country': 'Spain', 'target_class': 'renewable_portfolio'}'
+2026-07-05 17:19:55,831 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:57,474 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:19:57,477 - INFO - Response received from the model.
+2026-07-05 17:19:57,481 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Norges Bank revenue EBITDA net debt renewable energy investments'}'
+2026-07-05 17:19:57,481 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:19:57,591 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:19:57,592 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:20:04,770 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:04,775 - INFO - Response received from the model.
+2026-07-05 17:20:04,778 - INFO - Closing runner...
+2026-07-05 17:20:04,778 - INFO - Runner closed.
+2026-07-05 17:20:04,868 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:07,311 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:07,314 - INFO - Response received from the model.
+2026-07-05 17:20:07,318 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 91300000000, 'currency': 'NOK'}'
+2026-07-05 17:20:07,601 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:10,070 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:10,080 - INFO - Response received from the model.
+2026-07-05 17:20:10,084 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'sector': 'renewables', 'buyer': 'Schroders Greencoat', 'target_country': 'Spain', 'target_class': 'renewable_portfolio'}'
+2026-07-05 17:20:10,218 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:12,322 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:12,326 - INFO - Response received from the model.
+2026-07-05 17:20:12,332 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Schroders Greencoat revenue EBITDA net debt renewable energy investments Spain'}'
+2026-07-05 17:20:12,333 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:20:12,428 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:12,428 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:20:22,562 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:22,564 - INFO - Response received from the model.
+2026-07-05 17:20:22,566 - INFO - Closing runner...
+2026-07-05 17:20:22,566 - INFO - Runner closed.
+2026-07-05 17:20:22,662 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:25,728 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:25,731 - INFO - Response received from the model.
+2026-07-05 17:20:25,735 - INFO - [Agent 3 - Buyer Profiling] called save_transaction: '{'ev_eur_m': 284.2, 'target_name': '49% stake in 400 MW Spanish renewable energy portfolio', 'seller': 'Repsol', 'transaction_date': '2025-03', 'target_class': 'renewable_portfolio', 'buyer': 'Schroders Greencoat', 'sector': 'renewables', 'target_country': 'Spain', 'news_source': 'google_search_agent, March 2025'}'
+2026-07-05 17:20:25,827 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:26,966 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:26,969 - INFO - Response received from the model.
+2026-07-05 17:20:26,973 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_country': 'Spain', 'buyer': 'Schroders Greencoat', 'sector': 'renewables', 'target_class': 'renewable_portfolio'}'
+2026-07-05 17:20:27,061 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:29,321 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:29,325 - INFO - Response received from the model.
+2026-07-05 17:20:29,330 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'buyer': 'TotalEnergies', 'target_class': 'renewable_portfolio', 'target_country': 'Spain', 'sector': 'renewables'}'
+2026-07-05 17:20:29,459 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:30,550 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:30,554 - INFO - Response received from the model.
+2026-07-05 17:20:30,558 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'TotalEnergies revenue EBITDA net debt renewable energy investments Spain'}'
+2026-07-05 17:20:30,559 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:20:30,661 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:30,662 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:20:38,034 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:38,039 - INFO - Response received from the model.
+2026-07-05 17:20:38,043 - INFO - Closing runner...
+2026-07-05 17:20:38,043 - INFO - Runner closed.
+2026-07-05 17:20:38,216 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:40,281 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:40,286 - INFO - Response received from the model.
+2026-07-05 17:20:40,296 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 40600000000, 'currency': 'USD'}'
+2026-07-05 17:20:40,463 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:41,609 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:41,613 - INFO - Response received from the model.
+2026-07-05 17:20:41,621 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'currency': 'USD', 'amount': 23049000000}'
+2026-07-05 17:20:41,841 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:43,350 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:43,352 - INFO - Response received from the model.
+2026-07-05 17:20:43,359 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'TotalEnergies annual revenue 2023 2024 2025'}'
+2026-07-05 17:20:43,359 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:20:43,500 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:43,500 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:20:47,130 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:47,134 - INFO - Response received from the model.
+2026-07-05 17:20:47,137 - INFO - Closing runner...
+2026-07-05 17:20:47,137 - INFO - Runner closed.
+2026-07-05 17:20:47,315 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:48,777 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:48,779 - INFO - Response received from the model.
+2026-07-05 17:20:48,781 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 182340000000, 'currency': 'USD'}'
+2026-07-05 17:20:48,893 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:50,007 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:50,010 - INFO - Response received from the model.
+2026-07-05 17:20:50,015 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 195610000000, 'currency': 'USD'}'
+2026-07-05 17:20:50,119 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:51,449 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:51,451 - INFO - Response received from the model.
+2026-07-05 17:20:51,455 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 218900000000, 'currency': 'USD'}'
+2026-07-05 17:20:51,677 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:53,080 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:53,084 - INFO - Response received from the model.
+2026-07-05 17:20:53,105 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'TotalEnergies annual EBITDA 2023 2024 2025'}'
+2026-07-05 17:20:53,106 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:20:53,216 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:53,217 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:20:56,255 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:56,259 - INFO - Response received from the model.
+2026-07-05 17:20:56,262 - INFO - Closing runner...
+2026-07-05 17:20:56,262 - INFO - Runner closed.
+2026-07-05 17:20:56,379 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:57,686 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:57,689 - INFO - Response received from the model.
+2026-07-05 17:20:57,695 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'currency': 'USD', 'amount': 43100000000}'
+2026-07-05 17:20:57,809 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:20:59,120 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:20:59,123 - INFO - Response received from the model.
+2026-07-05 17:20:59,129 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 50000000000, 'currency': 'USD'}'
+2026-07-05 17:20:59,250 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:01,867 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:01,870 - INFO - Response received from the model.
+2026-07-05 17:21:01,877 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_country': 'Spain', 'buyer': 'Iberdrola', 'target_class': 'renewable_portfolio', 'sector': 'renewables'}'
+2026-07-05 17:21:01,979 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:03,216 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:03,220 - INFO - Response received from the model.
+2026-07-05 17:21:03,226 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Iberdrola revenue EBITDA net debt renewable energy investments Spain'}'
+2026-07-05 17:21:03,226 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:21:03,314 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:03,314 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:21:10,180 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:10,187 - INFO - Response received from the model.
+2026-07-05 17:21:10,190 - INFO - Closing runner...
+2026-07-05 17:21:10,191 - INFO - Runner closed.
+2026-07-05 17:21:10,302 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:11,716 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:11,720 - INFO - Response received from the model.
+2026-07-05 17:21:11,725 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Iberdrola annual revenue EBITDA 2023'}'
+2026-07-05 17:21:11,725 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:21:11,841 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:11,841 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:21:14,790 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:14,795 - INFO - Response received from the model.
+2026-07-05 17:21:14,797 - INFO - Closing runner...
+2026-07-05 17:21:14,797 - INFO - Runner closed.
+2026-07-05 17:21:15,033 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:17,452 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:17,455 - INFO - Response received from the model.
+2026-07-05 17:21:17,459 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Iberdrola EBITDA 2024'}'
+2026-07-05 17:21:17,460 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:21:17,592 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:17,593 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:21:21,549 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:21,552 - INFO - Response received from the model.
+2026-07-05 17:21:21,555 - INFO - Closing runner...
+2026-07-05 17:21:21,555 - INFO - Runner closed.
+2026-07-05 17:21:21,658 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:24,825 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:24,828 - INFO - Response received from the model.
+2026-07-05 17:21:24,833 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'buyer': 'Qualitas Energy', 'sector': 'renewables', 'target_class': 'renewable_portfolio', 'target_country': 'Spain'}'
+2026-07-05 17:21:24,944 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:26,363 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:26,365 - INFO - Response received from the model.
+2026-07-05 17:21:26,372 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Qualitas Energy revenue EBITDA net debt investment plans Spain'}'
+2026-07-05 17:21:26,373 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:21:26,455 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:26,455 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:21:34,756 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:34,761 - INFO - Response received from the model.
+2026-07-05 17:21:34,764 - INFO - Closing runner...
+2026-07-05 17:21:34,764 - INFO - Runner closed.
+2026-07-05 17:21:34,871 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:37,351 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:37,354 - INFO - Response received from the model.
+2026-07-05 17:21:37,359 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'target_class': 'renewable_portfolio', 'target_country': 'Spain', 'buyer': 'EDP Renewables', 'sector': 'renewables'}'
+2026-07-05 17:21:37,453 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:38,750 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:38,754 - INFO - Response received from the model.
+2026-07-05 17:21:38,760 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'EDP Renewables revenue EBITDA net debt renewable energy investments Spain'}'
+2026-07-05 17:21:38,760 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:21:38,839 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:38,839 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:21:46,663 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:46,666 - INFO - Response received from the model.
+2026-07-05 17:21:46,668 - INFO - Closing runner...
+2026-07-05 17:21:46,668 - INFO - Runner closed.
+2026-07-05 17:21:46,754 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:48,688 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:48,692 - INFO - Response received from the model.
+2026-07-05 17:21:48,699 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 3160000000, 'currency': 'USD'}'
+2026-07-05 17:21:48,807 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:50,116 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:50,119 - INFO - Response received from the model.
+2026-07-05 17:21:50,127 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'currency': 'USD', 'amount': 2500000000}'
+2026-07-05 17:21:50,218 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:53,895 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:53,899 - INFO - Response received from the model.
+2026-07-05 17:21:53,905 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'sector': 'renewables', 'buyer': 'Lightsource BP', 'target_class': 'renewable_portfolio', 'target_country': 'Spain'}'
+2026-07-05 17:21:53,995 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:55,260 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:21:55,263 - INFO - Response received from the model.
+2026-07-05 17:21:55,270 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Lightsource BP revenue EBITDA net debt renewable energy investments Spain'}'
+2026-07-05 17:21:55,270 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:21:55,345 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:21:55,346 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:22:03,944 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:03,951 - INFO - Response received from the model.
+2026-07-05 17:22:03,954 - INFO - Closing runner...
+2026-07-05 17:22:03,954 - INFO - Runner closed.
+2026-07-05 17:22:04,059 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:05,580 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:05,583 - INFO - Response received from the model.
+2026-07-05 17:22:05,590 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 390700000, 'currency': 'USD'}'
+2026-07-05 17:22:05,691 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:06,911 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:06,914 - INFO - Response received from the model.
+2026-07-05 17:22:06,920 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 287000000, 'currency': 'GBP'}'
+2026-07-05 17:22:07,034 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:08,655 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:08,658 - INFO - Response received from the model.
+2026-07-05 17:22:08,667 - INFO - [Agent 3 - Buyer Profiling] called convert_to_eur: '{'amount': 1500000000, 'currency': 'GBP'}'
+2026-07-05 17:22:08,764 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:11,418 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:11,421 - INFO - Response received from the model.
+2026-07-05 17:22:11,427 - INFO - [Agent 3 - Buyer Profiling] called search_transactions: '{'buyer': 'Acciona Energía', 'sector': 'renewables', 'target_class': 'renewable_portfolio', 'target_country': 'Spain'}'
+2026-07-05 17:22:11,516 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:12,851 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:12,858 - INFO - Response received from the model.
+2026-07-05 17:22:12,865 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Acciona Energía revenue EBITDA net debt renewable energy investments Spain'}'
+2026-07-05 17:22:12,866 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:22:12,949 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:12,950 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:22:17,463 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:17,467 - INFO - Response received from the model.
+2026-07-05 17:22:17,469 - INFO - Closing runner...
+2026-07-05 17:22:17,469 - INFO - Runner closed.
+2026-07-05 17:22:17,579 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:19,303 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:19,305 - INFO - Response received from the model.
+2026-07-05 17:22:19,313 - INFO - [Agent 3 - Buyer Profiling] called google_search_agent: '{'request': 'Acciona Energía revenue EBITDA 2024'}'
+2026-07-05 17:22:19,313 - INFO - Plugin 'ma_tracing' registered.
+2026-07-05 17:22:19,427 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:19,427 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:22:23,399 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:23,403 - INFO - Response received from the model.
+2026-07-05 17:22:23,405 - INFO - Closing runner...
+2026-07-05 17:22:23,406 - INFO - Runner closed.
+2026-07-05 17:22:23,653 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:36,043 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:36,047 - INFO - Response received from the model.
 
 [buyer_profiling_agent]
 json
 {
   "buyer_profiles": [
     {
-      "buyer_name": "Enel Green Power España / Endesa (Enel Group)",
+      "buyer_name": "Ingka Group",
       "buyer_type": "corporate",
-      "sector_focus": [
-        "renewables",
-        "utilities"
-      ],
-      "geography_focus": [
-        "Spain",
-        "Europe"
-      ],
+      "sector_focus": ["renewables"],
+      "geography_focus": ["Spain", "Portugal"],
       "expansion_mode": "acquiring",
-      "revenue_cagr_pct": 10.4,
-      "ebitda_cagr_pct": 1.6,
-      "financial_capacity": "strong",
-      "leverage_situation": "medium",
-      "min_deal_size_eur_m": 350,
-      "max_deal_size_eur_m": 1700,
-      "investment_plan_eur_m": 3000,
+      "revenue_cagr_pct": -3.09,
+      "ebitda_cagr_pct": -12.91,
+      "financial_capacity": "moderate",
+      "leverage_situation": "unknown",
+      "investment_plan_eur_m": 7500,
+      "comparable_deals_count": 0,
+      "comparable_deals": []
+    },
+    {
+      "buyer_name": "Matrix Renewables",
+      "buyer_type": "private_equity",
+      "sector_focus": ["renewables"],
+      "geography_focus": ["Spain", "US", "Italy", "Chile"],
+      "expansion_mode": "acquiring",
+      "financial_capacity": "unknown",
+      "leverage_situation": "unknown",
+      "comparable_deals_count": 0,
+      "comparable_deals": []
+    },
+    {
+      "buyer_name": "Norges Bank",
+      "buyer_type": "other",
+      "sector_focus": ["renewables"],
+      "geography_focus": ["Spain", "Europe", "North America"],
+      "expansion_mode": "acquiring",
+      "financial_capacity": "unknown",
+      "leverage_situation": "unknown",
+      "min_deal_size_eur_m": 203,
+      "max_deal_size_eur_m": 408.16,
+      "investment_plan_eur_m": 8101.87,
       "comparable_deals_count": 3,
       "comparable_deals": [
         {
-          "target_name": "519 MW photovoltaic portfolio",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2022",
-          "seller": "Arena Power",
-          "ev_eur_m": 350,
-          "capacity_mw": 519,
-          "ev_mw": 674373.79
-        },
-        {
-          "target_name": "2 GW operational photovoltaic portfolio",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2024",
-          "seller": "Endesa",
-          "ev_eur_m": 1700,
-          "capacity_mw": 2000,
-          "ev_mw": 850000
-        },
-        {
-          "target_name": "446 MW operational photovoltaic plants",
+          "target_name": "316 MW solar farm in Salamanca",
           "target_class": "renewable_portfolio",
           "target_country": "Spain",
           "transaction_year": "2025",
-          "seller": "Enel Green Power España",
-          "ev_eur_m": 184,
-          "capacity_mw": 446,
-          "ev_mw": 412556.05
+          "seller": "Iberdrola España",
+          "ev_eur_m": 408.16
+        },
+        {
+          "target_name": "49% stake in a portfolio of solar plants",
+          "target_class": "renewable_portfolio",
+          "target_country": "Spain",
+          "transaction_year": "2024",
+          "seller": "Iberdrola S.A.",
+          "ev_eur_m": 203
+        },
+        {
+          "target_name": "49% stake in a portfolio of solar plants and onshore wind farms",
+          "target_class": "renewable_portfolio",
+          "target_country": "Spain",
+          "transaction_year": "2024",
+          "seller": "Iberdrola S.A.",
+          "ev_eur_m": 307
         }
       ]
     },
     {
-      "buyer_name": "Repsol",
-      "buyer_type": "corporate",
-      "sector_focus": [
-        "renewables",
-        "energy"
-      ],
-      "geography_focus": [
-        "Spain",
-        "Portugal"
-      ],
+      "buyer_name": "Schroders Greencoat",
+      "buyer_type": "private_equity",
+      "sector_focus": ["renewables"],
+      "geography_focus": ["Spain", "Europe", "UK", "USA"],
       "expansion_mode": "acquiring",
-      "revenue_cagr_pct": 7.6,
-      "ebitda_cagr_pct": 4.5,
-      "financial_capacity": "strong",
-      "leverage_situation": "low",
-      "max_deal_size_eur_m": 849,
-      "investment_plan_eur_m": 1000,
-      "comparable_deals_count": 2,
+      "financial_capacity": "unknown",
+      "leverage_situation": "unknown",
+      "min_deal_size_eur_m": 284.2,
+      "investment_plan_eur_m": 220,
+      "comparable_deals_count": 1,
       "comparable_deals": [
         {
-          "target_name": "250 MW renewable assets (wind and solar)",
+          "target_name": "49% stake in 400 MW Spanish renewable energy portfolio",
           "target_class": "renewable_portfolio",
           "target_country": "Spain",
-          "transaction_year": "2023",
-          "seller": "ABO Wind"
-        },
-        {
-          "target_name": "705 MW operational renewables portfolio (303 MW solar PV)",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2026",
+          "transaction_year": "2025",
           "seller": "Repsol",
-          "ev_eur_m": 849,
-          "capacity_mw": 705,
-          "ev_mw": 1204255.32
+          "ev_eur_m": 284.2
         }
       ]
     },
     {
       "buyer_name": "TotalEnergies",
       "buyer_type": "corporate",
-      "sector_focus": [
-        "renewables",
-        "energy"
-      ],
-      "geography_focus": [
-        "Spain"
-      ],
+      "sector_focus": ["renewables", "energy"],
+      "geography_focus": ["Spain", "Europe"],
       "expansion_mode": "acquiring",
-      "revenue_cagr_pct": 8.8,
-      "ebitda_cagr_pct": 8.7,
-      "financial_capacity": "strong",
+      "revenue_cagr_pct": -9.28,
+      "ebitda_cagr_pct": -10.51,
+      "financial_capacity": "moderate",
       "leverage_situation": "low",
-      "min_deal_size_eur_m": 40,
-      "investment_plan_eur_m": 212,
-      "comparable_deals_count": 1,
-      "comparable_deals": [
-        {
-          "target_name": "65% of 59 MW 'Campos del Río' solar project",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2025",
-          "seller": "Soltec"
-        }
-      ]
-    },
-    {
-      "buyer_name": "Ingka Group (IKEA Retailer)",
-      "buyer_type": "corporate",
-      "sector_focus": [
-        "renewables",
-        "consumer_retail"
-      ],
-      "geography_focus": [
-        "Spain"
-      ],
-      "expansion_mode": "acquiring",
-      "revenue_cagr_pct": 5.5,
-      "financial_capacity": "strong",
-      "leverage_situation": "unknown",
-      "min_deal_size_eur_m": 100,
-      "investment_plan_eur_m": 4300,
-      "comparable_deals_count": 1,
-      "comparable_deals": [
-        {
-          "target_name": "La Oliva solar farm and a project in Los Alcázares",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2026"
-        }
-      ]
-    },
-    {
-      "buyer_name": "Velto Renewables",
-      "buyer_type": "renewable_platform",
-      "sector_focus": [
-        "renewables"
-      ],
-      "geography_focus": [
-        "Spain",
-        "France",
-        "UK"
-      ],
-      "expansion_mode": "acquiring",
-      "financial_capacity": "unknown",
-      "leverage_situation": "unknown",
-      "max_deal_size_eur_m": 1100,
-      "comparable_deals_count": 2,
-      "comparable_deals": [
-        {
-          "target_name": "260 MW portfolio of regulated solar projects",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2025",
-          "seller": "Helia II FCR and Plenium Partners",
-          "ev_eur_m": 1100,
-          "capacity_mw": 260,
-          "ev_mw": 4230769.23
-        },
-        {
-          "target_name": "Minority stake in 45 MWp Enersol solar portfolio",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2026",
-          "seller": "Equitix"
-        }
-      ]
-    },
-    {
-      "buyer_name": "Masdar",
-      "buyer_type": "renewable_platform",
-      "sector_focus": [
-        "renewables"
-      ],
-      "geography_focus": [
-        "Spain"
-      ],
-      "expansion_mode": "acquiring",
-      "revenue_cagr_pct": 116.1,
-      "financial_capacity": "unknown",
-      "leverage_situation": "unknown",
-      "min_deal_size_eur_m": 184,
-      "max_deal_size_eur_m": 1700,
-      "comparable_deals_count": 3,
-      "comparable_deals": [
-        {
-          "target_name": "2 GW operational photovoltaic portfolio",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2024",
-          "seller": "Endesa",
-          "ev_eur_m": 1700,
-          "capacity_mw": 2000,
-          "ev_mw": 850000
-        },
-        {
-          "target_name": "705 MW operational renewables portfolio (303 MW solar PV)",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2026",
-          "seller": "Repsol",
-          "ev_eur_m": 849,
-          "capacity_mw": 705,
-          "ev_mw": 1204255.32
-        },
-        {
-          "target_name": "446 MW solar farms",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2025",
-          "seller": "Enel Green Power España",
-          "ev_eur_m": 184,
-          "capacity_mw": 446,
-          "ev_mw": 412556.05
-        }
-      ]
-    },
-    {
-      "buyer_name": "IST (Swiss Pension Fund Investor)",
-      "buyer_type": "infrastructure_fund",
-      "sector_focus": [
-        "renewables",
-        "infrastructure"
-      ],
-      "geography_focus": [
-        "Spain",
-        "Switzerland"
-      ],
-      "expansion_mode": "acquiring",
-      "financial_capacity": "unknown",
-      "leverage_situation": "unknown",
-      "min_deal_size_eur_m": 330,
-      "max_deal_size_eur_m": 330,
-      "comparable_deals_count": 1,
-      "comparable_deals": [
-        {
-          "target_name": "91 MW solar portfolio",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2026",
-          "seller": "Bestinver",
-          "ev_eur_m": 330,
-          "capacity_mw": 91,
-          "ev_mw": 3626373.63
-        }
-      ]
-    },
-    {
-      "buyer_name": "Naturgy",
-      "buyer_type": "corporate",
-      "sector_focus": [
-        "renewables",
-        "utilities"
-      ],
-      "geography_focus": [
-        "Spain"
-      ],
-      "expansion_mode": "acquiring",
-      "revenue_cagr_pct": 1.07,
-      "ebitda_cagr_pct": 24.1,
-      "financial_capacity": "strong",
-      "leverage_situation": "medium",
-      "min_deal_size_eur_m": 260,
-      "max_deal_size_eur_m": 650,
-      "investment_plan_eur_m": 1000,
-      "comparable_deals_count": 1,
-      "comparable_deals": [
-        {
-          "target_name": "435 MW photovoltaic solar parks (part of ASR Wind)",
-          "target_class": "renewable_portfolio",
-          "target_country": "Spain",
-          "transaction_year": "2023",
-          "seller": "Ardian",
-          "ev_eur_m": 650,
-          "capacity_mw": 435,
-          "ev_mw": 1494252.87
-        }
-      ]
-    },
-    {
-      "buyer_name": "Plenitude (Eni's Renewable Energy Subsidiary)",
-      "buyer_type": "corporate",
-      "sector_focus": [
-        "renewables"
-      ],
-      "geography_focus": [
-        "Spain"
-      ],
-      "expansion_mode": "developing",
-      "ebitda_cagr_pct": 22.47,
-      "financial_capacity": "strong",
-      "leverage_situation": "medium",
       "comparable_deals_count": 0,
       "comparable_deals": []
     },
     {
       "buyer_name": "Iberdrola",
       "buyer_type": "corporate",
-      "sector_focus": [
-        "renewables",
-        "utilities"
-      ],
-      "geography_focus": [
-        "Spain"
-      ],
-      "expansion_mode": "developing",
-      "revenue_cagr_pct": 12.2,
-      "ebitda_cagr_pct": 9.5,
-      "financial_capacity": "strong",
+      "sector_focus": ["renewables", "utilities"],
+      "geography_focus": ["Spain"],
+      "expansion_mode": "acquiring",
+      "revenue_cagr_pct": -3.99,
+      "ebitda_cagr_pct": 7.31,
+      "financial_capacity": "moderate",
       "leverage_situation": "medium",
-      "investment_plan_eur_m": 5800,
+      "investment_plan_eur_m": 5000,
+      "comparable_deals_count": 0,
+      "comparable_deals": []
+    },
+    {
+      "buyer_name": "Qualitas Energy",
+      "buyer_type": "private_equity",
+      "sector_focus": ["renewables"],
+      "geography_focus": ["Spain", "Germany", "UK", "Poland", "Chile", "US", "Italy"],
+      "expansion_mode": "acquiring",
+      "financial_capacity": "unknown",
+      "leverage_situation": "unknown",
+      "investment_plan_eur_m": 2400,
+      "comparable_deals_count": 0,
+      "comparable_deals": []
+    },
+    {
+      "buyer_name": "EDP Renewables (EDPR)",
+      "buyer_type": "corporate",
+      "sector_focus": ["renewables"],
+      "geography_focus": ["Spain", "Portugal", "Italy"],
+      "expansion_mode": "acquiring",
+      "revenue_cagr_pct": 3.16,
+      "ebitda_cagr_pct": -12.19,
+      "financial_capacity": "moderate",
+      "leverage_situation": "high",
+      "investment_plan_eur_m": 166.67,
+      "comparable_deals_count": 0,
+      "comparable_deals": []
+    },
+    {
+      "buyer_name": "Lightsource BP",
+      "buyer_type": "corporate",
+      "sector_focus": ["renewables"],
+      "geography_focus": ["Spain", "Europe"],
+      "expansion_mode": "acquiring",
+      "financial_capacity": "unknown",
+      "leverage_situation": "high",
+      "investment_plan_eur_m": 1000,
+      "comparable_deals_count": 0,
+      "comparable_deals": []
+    },
+    {
+      "buyer_name": "Acciona Energía",
+      "buyer_type": "corporate",
+      "sector_focus": ["renewables"],
+      "geography_focus": ["Spain"],
+      "expansion_mode": "acquiring",
+      "revenue_cagr_pct": -17.07,
+      "ebitda_cagr_pct": -18.73,
+      "financial_capacity": "moderate",
+      "leverage_situation": "medium",
       "comparable_deals_count": 0,
       "comparable_deals": []
     }
   ]
 }
 
-2026-07-04 09:46:29,410 - INFO - [Agent 3 - Buyer Profiling] completed - latency: 193143ms
-2026-07-04 09:46:29,412 - INFO - [Agent 3 - Buyer Profiling] trace recorded
-2026-07-04 09:46:29,423 - INFO - [Agent 4 - Deal Matching] started
+2026-07-05 17:22:36,057 - INFO - [Agent 3 - Buyer Profiling] completed - latency: 200148ms
+2026-07-05 17:22:36,057 - INFO - [Agent 3 - Buyer Profiling] trace recorded
+2026-07-05 17:22:36,059 - INFO - [Agent 4 - Deal Matching] started
 
 [deal_matching_agent]
 10 buyers ranked, 0 excluded.
-2026-07-04 09:46:29,428 - INFO - [Agent 4 - Deal Matching] completed - latency: 4ms
-2026-07-04 09:46:29,428 - INFO - [Agent 4 - Deal Matching] trace recorded
-2026-07-04 09:46:29,428 - INFO - [Agent 5 - Strategy] started
-2026-07-04 09:46:29,534 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
-2026-07-04 09:46:29,536 - INFO - AFC is enabled with max remote calls: 10.
-2026-07-04 09:46:49,151 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
-2026-07-04 09:46:49,156 - INFO - Response received from the model.
+2026-07-05 17:22:36,060 - INFO - [Agent 4 - Deal Matching] completed - latency: 1ms
+2026-07-05 17:22:36,060 - INFO - [Agent 4 - Deal Matching] trace recorded
+2026-07-05 17:22:36,061 - INFO - [Agent 5 - Strategy] started
+2026-07-05 17:22:36,167 - INFO - Sending out request, model: gemini-2.5-flash, backend: GoogleLLMVariant.GEMINI_API, stream: False
+2026-07-05 17:22:36,168 - INFO - AFC is enabled with max remote calls: 10.
+2026-07-05 17:22:55,860 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-07-05 17:22:55,863 - INFO - Response received from the model.
 
 [strategy_agent]
 OUTREACH STRATEGY
 
-TIER 1 - PRIMARY TARGETS
+TIER 1 - PRIMARY TARGETS (match_score 0.85 - 1.0)
 
-- Rank: 1
-- Name: Enel Green Power España / Endesa (Enel Group)
-- Match score: 1.0
-- Key rationale: This buyer demonstrates an exceptional fit, having recently acquired a 519 MW photovoltaic portfolio in Spain, very similar in size and value to the target. Their strong financial capacity, clear "acquiring" expansion mode, and consistent activity in the Spanish solar PV market underscore their high strategic alignment. Active participation in large-scale renewable deals further confirms their robust appetite for significant solar assets.
+Rank: 1
+Name: Schroders Greencoat
+Match score: 0.97
+Key rationale: This buyer demonstrates high sector, geography, and size fit, evidenced by their recent 2025 acquisition of a 49% stake in a 400 MW Spanish renewable portfolio. Their active acquiring mode and formation of a dedicated Europe SCSp Fund signal strong intent for further Spanish investments. The positive recency bonus further confirms their strong and sustained interest in similar assets.
 
-- Rank: 2
-- Name: TotalEnergies
-- Match score: 1.0
-- Key rationale: TotalEnergies is a perfect match with high sector, geography, and size fit, supported by a strong financial capacity and an "acquiring" expansion mode. Their aggressive strategy to achieve over 5 GW of solar projects in Spain by 2025 and recent commissioning of solar farms indicate a continuous push for growth. A recent co-development agreement for a 59 MW solar project in Spain in 2025 confirms their ongoing M&A activity in the region.
+Rank: 2
+Name: Ingka Group
+Match score: 0.94
+Key rationale: With a strong match across sector, geography, and size, Ingka Group recently entered the Spanish solar market with two solar park acquisitions in 2026. Their confirmed acquiring mode and moderate financial capacity support continued expansion in Iberia. This makes them a highly relevant and capable buyer for the target portfolio.
 
-- Rank: 3
-- Name: Ingka Group (IKEA Retailer)
-- Match score: 1.0
-- Key rationale: Ingka Group shows high strategic fit, recently entering the Spanish solar market with the acquisition of its first two solar parks in 2026. This indicates a strong "acquiring" expansion mode and a commitment to large-scale renewable investments, as evidenced by their EUR 4.3 billion investment in renewable assets. Their strong financial capacity suggests they are well-positioned to pursue further substantial acquisitions in the sector.
+Rank: 3
+Name: Iberdrola
+Match score: 0.94
+Key rationale: A leading Spanish energy group, Iberdrola exhibits high fit in sector, geography, and size, actively expanding its significant renewable capacity in Spain. The company commissioned a 316 MW solar farm in 2025 and maintains a moderate financial capacity with medium leverage. Its established presence and continuous investment in Spanish renewables make it a primary strategic acquirer.
 
-- Rank: 4
-- Name: Masdar
-- Match score: 1.0
-- Key rationale: Masdar is a highly active and relevant buyer, having consistently engaged in significant solar PV acquisitions and partnerships in Spain, including multi-gigawatt portfolios. Their recent acquisition of a 49.99% stake in a 705 MW operational renewables portfolio in 2026 confirms their strong "acquiring" mode and capacity to execute large-scale deals. Although financial capacity and leverage are unknown, their established track record and large-scale investment plans in Spain highlight their strong interest.
+Rank: 4
+Name: Norges Bank
+Match score: 0.91
+Key rationale: This sovereign wealth fund shows high sector and geography fit, with a recent history of substantial investments in Spanish renewable portfolios. Their participation in multiple comparable deals, including a 316 MW solar farm in 2025, demonstrates a clear and active acquiring mandate. The positive recency bonus and significant investment capacity position them as a top-tier financial acquirer.
 
-- Rank: 5
-- Name: Repsol
-- Match score: 0.95
-- Key rationale: Repsol exhibits a very strong fit, actively acquiring and partnering in Spanish solar PV assets, including a recent deal involving 303 MW of solar PV within a 705 MW portfolio in 2026. The company has strong financial capacity and a low leverage situation, indicating robust acquisition power. Their defined investment plans to expand low-carbon generation in Spain confirm their continued "acquiring" mode.
+Rank: 5
+Name: Qualitas Energy
+Match score: 0.88
+Key rationale: Qualitas Energy aligns strongly with the target's sector, geography, and size, having recently closed a EUR 2.4 billion renewable energy fund with a strategy focused on Spanish solar PV. Their confirmed acquiring mode and ambitious investment plans, including over EUR 10 billion for 2026-2029, signify substantial financial backing. This makes them a highly opportunistic and well-funded private equity buyer.
 
-- Rank: 6
-- Name: Iberdrola
-- Match score: 0.92
-- Key rationale: Iberdrola is a dominant player in Spain's renewable sector with ambitious expansion plans for photovoltaic capacity. While their primary mode is "developing" rather than pure "acquiring," their large project pipeline and a recent strategic alliance (Norges Bank acquiring 49% in a 644 MW portfolio in 2024) demonstrate openness to large-scale portfolio transactions. Their strong financial capacity and high geographic and sector fit make them a compelling target.
+Rank: 6
+Name: Lightsource BP
+Match score: 0.88
+Key rationale: This leading IPP shows high fit across sector, geography, and size, with a stated expansion mode for utility-scale solar in Spain. Lightsource BP has ambitious plans to invest over EUR 1 billion for 1.3 GWp of solar in Spain, building on existing operational capacity and projects under construction. Despite high leverage, their strategic commitment and strong parent company backing make them a determined acquirer.
 
-- Rank: 7
-- Name: Naturgy
-- Match score: 0.9
-- Key rationale: Naturgy is a strong candidate with a clear "acquiring" mode, having recently acquired a 435 MW photovoltaic solar park portfolio in Spain in 2023. Their strong financial capacity, medium leverage, and significant ongoing investments in solar capacity expansion in Andalusia reinforce their suitability. The company's focus on new developments and battery storage also indicates a strategic alignment with modern renewable assets.
+TIER 2 - SECONDARY TARGETS (match_score 0.65 - 0.84)
 
-- Rank: 8
-- Name: Velto Renewables
-- Match score: 0.88
-- Key rationale: Velto Renewables has a proven "acquiring" strategy in Spain, demonstrated by its 2025 acquisition of a 260 MW regulated solar portfolio for an estimated EUR 1.1 billion. This indicates a strong appetite for substantial solar assets, well within the target's capacity range. Their ongoing expansion and strong presence in the Iberian Peninsula highlight their active market participation.
+Rank: 7
+Name: TotalEnergies
+Match score: 0.84
+Key rationale: TotalEnergies has a high sector and geography fit, along with a medium size fit, and recently inaugurated its largest European solar project (263 MW) in Seville. The company maintains a moderate financial capacity and low leverage, supporting its active acquiring mode and ambitious renewable capacity targets.
+Condition for activation: Demonstrate a strategic preference for immediate acquisitions over greenfield development to accelerate their 3 GW Spanish solar pipeline.
 
-TIER 2 - SECONDARY TARGETS
+Rank: 8
+Name: EDP Renewables (EDPR)
+Match score: 0.84
+Key rationale: EDPR is a prominent renewable energy leader in Spain with high sector and geography fit, actively commissioning new PV plants. While the company has moderate financial capacity and high leverage, its robust development pipeline signals continued growth intent.
+Condition for activation: Prioritize portfolio additions that offer immediate operational capacity and cash flow, especially if they can de-lever or fund the acquisition through favorable project finance.
 
-- Rank: 9
-- Name: Plenitude (Eni's Renewable Energy Subsidiary)
-- Match score: 0.82
-- Key rationale: Plenitude demonstrates a high sector and geography fit, with significant installed capacity and an extensive development pipeline of solar PV projects in Spain. However, their primary expansion mode appears to be "developing" new projects rather than acquiring existing portfolios, as evidenced by commissioning multiple large plants but no comparable acquisitions. Their strong financial capacity indicates they could pivot to acquisition if a compelling opportunity arises.
-- Condition for activation: Demonstrate a shift in expansion strategy towards acquiring operational solar PV portfolios of similar scale in Spain, or if they explicitly indicate interest in immediate, large-scale acquisitions to accelerate their capacity targets.
+Rank: 9
+Name: Acciona Energía
+Match score: 0.84
+Key rationale: Acciona Energía exhibits high sector and geography fit with a medium size fit, being a major player in Spain's renewable market with a confirmed acquiring mode. Despite moderate financial capacity and medium leverage, the company has shown consistent investment in increasing its installed capacity in Spain.
+Condition for activation: A strong strategic alignment with the specific characteristics or location of the target portfolio, or if the initial Tier 1 outreach indicates lower competitive tension than anticipated.
 
-- Rank: 10
-- Name: IST (Swiss Pension Fund Investor)
-- Match score: 0.8
-- Key rationale: IST, through its subsidiary Terralys Renovables, has shown interest in the Spanish solar market with a recent acquisition of a 91 MW solar portfolio in 2026. While they have an "acquiring" mode and high sector/geography fit, the size of their most recent comparable deal is significantly smaller than the 500 MW target. Their financial capacity is unknown, which presents a potential hurdle for a deal of this scale.
-- Condition for activation: Confirmation of sufficient financial capacity to execute a ~EUR 450M acquisition and evidence of appetite for assets significantly larger than their prior 91 MW portfolio, possibly through a larger co-investment or increased fund allocation.
+Rank: 10
+Name: Matrix Renewables
+Match score: 0.78
+Key rationale: Backed by TPG Rise, Matrix Renewables demonstrates high sector and geography fit with a medium size fit, actively expanding its operational portfolio in Spain. While their financial capacity is unknown, they have secured substantial debt financing for global expansion, including significant investment in Spain.
+Condition for activation: Provide clear evidence of sufficient equity and debt capacity allocated specifically for an acquisition of this scale, or if a more comprehensive financial profile can be established.
 
-TIER 3 - BACKUP TARGETS
-- No buyers in this tier.
+TIER 3 - BACKUP TARGETS (match_score 0.4 - 0.64)
+
+There are no buyers in Tier 3.
 
 EXCLUDED - DO NOT CONTACT
-- No buyers in this tier.
+
+There are no excluded buyers from the provided Deal Matching Results.
 
 FINAL RECOMMENDATION
 
-- recommended_tier_1:
-  - Enel Green Power España / Endesa (Enel Group)
-  - TotalEnergies
-  - Ingka Group (IKEA Retailer)
-  - Masdar
-  - Repsol
-  - Iberdrola
-  - Naturgy
-  - Velto Renewables
-- recommended_tier_2:
-  - Plenitude (Eni's Renewable Energy Subsidiary)
-  - IST (Swiss Pension Fund Investor)
-- deal_close_probability: high
-- overall_strategy_note: We have identified a robust list of 8 primary target buyers, indicating strong competitive tension and a high probability of deal closure. The market for 500MW solar PV portfolios in Spain is highly active, with numerous strategic and financial buyers demonstrating recent acquisition appetite and strong financial capacity. Our strategy will prioritize engagement with Tier 1 buyers to maximize value and ensure a competitive process.
-2026-07-04 09:46:49,160 - INFO - [Agent 5 - Strategy] completed - latency: 19731ms
-2026-07-04 09:46:49,160 - INFO - [Agent 5 - Strategy] trace recorded
-2026-07-04 09:46:49,173 - INFO - Full trace saved to observability/logs/full_trace.json
+recommended_tier_1: Schroders Greencoat, Ingka Group, Iberdrola, Norges Bank, Qualitas Energy, Lightsource BP
+recommended_tier_2: TotalEnergies, EDP Renewables (EDPR), Acciona Energía, Matrix Renewables
+deal_close_probability: high
+overall_strategy_note: The presence of six strong Tier 1 buyers with high strategic fit and active acquisition modes indicates a high likelihood of competitive tension and successful deal close for the 500MW Solar PV Portfolio in Spain. The four Tier 2 buyers provide a robust backup, offering additional competitive tension if needed to optimize the process outcome. This comprehensive list covers both strategic and financial acquirers deeply invested in the Spanish renewable energy sector.
+2026-07-05 17:22:55,869 - INFO - [Agent 5 - Strategy] completed - latency: 19808ms
+2026-07-05 17:22:55,869 - INFO - [Agent 5 - Strategy] trace recorded
+2026-07-05 17:22:55,873 - INFO - Full trace saved to observability/logs/full_trace.json
 
 ---------------------------------------------------------
 M&A SIGNAL INTELLIGENCE ENGINE - PIPELINE SUMMARY
 ---------------------------------------------------------
-Run ID  : run_20260704_094237
+Run ID  : run_20260705_171847
 Target  : 500MW Solar PV Portfolio
 ---------------------------------------------------------
   Agent 1 - News Ingestion            signals retrieved
   Agent 2 - Signal Extraction         events classified
   Agent 3 - Buyer Profiling           10 buyer profiles built
   Agent 4 - Deal Matching             10 buyers scored (0 excluded)
-    Top buyer: Enel Green Power España / Endesa (Enel Group) (score: 1.0)
+    Top buyer: Schroders Greencoat (score: 0.97)
   Agent 5 - Strategy                  recommendation generated
 ---------------------------------------------------------
-Google Search calls           22
-Total latency                 252100ms
+Google Search calls           15
+Total latency                 248777ms
 ---------------------------------------------------------
 ```
