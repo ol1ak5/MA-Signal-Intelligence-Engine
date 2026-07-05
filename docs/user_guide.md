@@ -29,8 +29,8 @@ scoring), `skills/` (anti-hallucination rules), `memory/` (precedent-deal store)
 
 **Context compaction:** the orchestrator's `App` also enables context
 compaction via a **deterministic, no-API summarizer** (`orchestrator/compaction.py`).
-As events accumulate during a run, it condenses older ones into a single event —
-preserving each agent's text while truncating bulky tool output – to keep the
+As events accumulate during a run, it condenses older ones into a single event,
+preserving each agent's text while truncating bulky tool output to keep the
 context focused. It is intentionally LLM-free so it adds no model calls (unlike
 ADK's default summarizer).
 
@@ -45,7 +45,7 @@ ADK's default summarizer).
 | **uv** *(optional)* | 0.11.21 | Faster installer/runner used in development. Not required — `pip` works. |
 | **adk** (CLI) | 2.2.0 | Comes bundled with `google-adk`; useful for interactive poking, but **not** how we run the pipeline. |
 
-You also need a **Google AI Studio API key** (free) — see §4.
+You also need a **Google AI Studio API key** (free) – see §4.
 
 ---
 
@@ -61,16 +61,16 @@ pip install -r requirements.txt
 
 | Package | Version | What it's for in this project |
 |---------|---------|-------------------------------|
-| **google-adk** | 2.2.0 | The agent framework — `Agent`, `SequentialAgent`, `App`, `Runner`, the plugin system (our tracer), and the built-in `google_search` tool. This is the backbone. |
+| **google-adk** | 2.2.0 | The agent framework – `Agent`, `SequentialAgent`, `App`, `Runner`, the plugin system (our tracer), and the built-in `google_search` tool. This is the backbone. |
 | **google-genai** | 2.8.0 | The Gemini client. ADK uses it under the hood for every model call; we also use it directly for `types.Content` (building messages) and for the fast target-extraction call in `run.py`. |
 | **requests** | 2.34.2 | Used by `tools/currency_tool.py` to fetch live EUR exchange rates from the European Central Bank XML feed. |
 | **python-dotenv** | 1.2.2 | Loads your API key from `orchestrator/.env` into the environment at startup. |
 
 Transitive dependencies (pydantic, google-auth, the Gemini HTTP stack, …) are
-pulled in automatically by `google-adk` — you don't list them.
+pulled in automatically by `google-adk` – you don't list them.
 
 The standard library does the rest (`json`, `re`, `asyncio`, `uuid`,
-`datetime`, `pathlib`, `xml.etree`, `argparse`, `logging`) — nothing to install.
+`datetime`, `pathlib`, `xml.etree`, `argparse`, `logging`) – nothing to install.
 
 ---
 
@@ -100,10 +100,10 @@ The Gemini **free tier allows only 5 requests per minute** (plus a small daily
 quota) for `gemini-2.5-flash`, **per Google Cloud project** (not per key). A
 full pipeline run makes **~15–25 model calls** (five agents plus the nested
 web-search calls fired by buyer profiling), so a free-tier run will hit
-`429 RESOURCE_EXHAUSTED` before it finishes — every time, not occasionally.
+`429 RESOURCE_EXHAUSTED` before it finishes – every time, not occasionally.
 
 To run the whole pipeline end to end, **enable pay-as-you-go billing** on your
-AI Studio project. The cost is small — a complete run is on the order of a few
+AI Studio project. The cost is small – a complete run is on the order of a few
 cents with Gemini Flash. Swapping in a *new key* does **not** help — the caps
 are per project. (The three offline evals need no API at all; see §8.)
 
@@ -113,7 +113,7 @@ are per project. (The three offline evals need no API at all; see §8.)
 
 Run from the project root. There are three ways:
 
-### a) Custom request — interactive
+### a) Custom request – interactive
 
 ```bash
 python3 run.py
@@ -127,7 +127,7 @@ Type your request in plain language, press Enter.
 
 ### b) Built-in example
 
-Run `python3 run.py` and just **press Enter** at the prompt — it runs the
+Run `python3 run.py` and just **press Enter** at the prompt – it runs the
 default target (a 500MW Solar PV Portfolio in Spain). No extra cost.
 
 ### ⚠️ Writing a built-in example - important
@@ -137,7 +137,7 @@ When describing the acquisition target, include as much detail as possible
 More specific inputs help the system to identify the most relevant buyers and
 reduce the likelihood of Gemini 503 "Service Unavailable" error.
 
-### c) One-shot — quotes required
+### c) One-shot – quotes required
 
 ```bash
 python3 run.py "Find buyers for a distressed German fiber-optic company"
@@ -153,21 +153,21 @@ Write a natural-language description of the **asset being sold**. A fast lite
 model extracts the structured fields the scorer needs, so include where you can:
 
 - **What** the asset is (company / renewable portfolio / real estate / infrastructure)
-- **Sector** — one of the 18 recognised sectors listed below
+- **Sector** – one of the 18 recognised sectors listed below
 - **Country / region**
-- **Size** *(optional)* — include only if you happen to know it; for an asset
+- **Size** *(optional)* – include only if you happen to know it; for an asset
   that's up for sale the value is usually unknown, and if omitted the size-fit
   part of the scoring is simply left neutral. For **renewable portfolios**,
   stating the capacity in MW (e.g. "500MW") lets the scorer size-match on MW
-  (physical capacity) rather than price — the natural yardstick for that class.
+  (physical capacity) rather than price – the natural yardstick for that class.
 
 ### Target sectors
 
 For the most reliable results, frame your target within one of these **18
 sectors**. The engine matches buyers using this controlled vocabulary, so a
 request that maps cleanly to one of them produces the most consistent scoring
-and output. Free-form input still works — the extractor maps it to the closest
-sector — but **sticking to the list gives the best results**.
+and output. Free-form input still works – the extractor maps it to the closest
+sector – but **sticking to the list gives the best results**.
 
 | Sector (`label`) | Covers |
 |---|---|
@@ -211,9 +211,9 @@ Extracted target_profile: {'target_name': 'German fiber-optic company',
 
 For each agent that produces text, you'll see a labelled block:
 
-- **`[news_ingestion_agent]`** — a list of recent, real deals found via web search
+- **`[news_ingestion_agent]`** – a list of recent, real deals found via web search
   (buyers, EV, dates, sources).
-- **`[signal_extraction_agent]`** — structured signal objects as plain text,
+- **`[signal_extraction_agent]`** – structured signal objects as plain text,
   one `field: value` block per deal, e.g.:
   ```text
   buyer: Masdar
@@ -226,10 +226,10 @@ For each agent that produces text, you'll see a labelled block:
   strategic_driver: market_expansion
   urgency: medium
   ```
-- **`[buyer_profiling_agent]`** — JSON buyer profiles (consumed by the scorer).
-- **`[deal_matching_agent]`** — a one-line summary, e.g. `4 buyers ranked, 1 excluded.`
+- **`[buyer_profiling_agent]`** – JSON buyer profiles (consumed by the scorer).
+- **`[deal_matching_agent]`** – a one-line summary, e.g. `4 buyers ranked, 1 excluded.`
   (Full ranked results are passed in state to the strategy agent.)
-- **`[strategy_agent]`** — the deliverable: buyers grouped into **Tier 1 / Tier 2 /
+- **`[strategy_agent]`** – the deliverable: buyers grouped into **Tier 1 / Tier 2 /
   Tier 3 / Excluded** with match scores, rationale, and a final recommendation
   (`recommended_tier_1`, `deal_close_probability`, `overall_strategy_note`).
 
