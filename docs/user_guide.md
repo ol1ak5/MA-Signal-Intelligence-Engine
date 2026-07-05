@@ -18,7 +18,7 @@ once if a flaky model turn returns empty output):
 | # | Agent | Role | LLM? |
 |---|-------|------|------|
 | 1 | `news_ingestion_agent` | Searches the web (Google Search grounding) for recent M&A deals related to the target | Yes |
-| 2 | `signal_extraction_agent` | Turns raw news into structured signal objects (buyer, sector, multiple, urgency…) | Yes |
+| 2 | `signal_extraction_agent` | Turns raw news into structured signal objects (buyer, sector, multiple, urgency, etc.) | Yes |
 | 3 | `buyer_profiling_agent` | Researches each buyer and emits structured **JSON** profiles (sector/geo focus, financial capacity, deal-size range) | Yes |
 | 4 | `deal_matching_agent` | **Pure Python** – scores & ranks buyers vs. the target, applies hard exclusions | No |
 | 5 | `strategy_agent` | Classifies ranked buyers into Tier 1/2/3 and writes an outreach strategy | Yes |
