@@ -1,4 +1,4 @@
-# 📘 M&A Signal Intelligence Engine — User Guide
+# 📘 M&A Signal Intelligence Engine – User Guide
 
 A multi-agent system that scans recent M&A news, structures it into signals,
 profiles potential buyers, scores them deterministically against an acquisition
