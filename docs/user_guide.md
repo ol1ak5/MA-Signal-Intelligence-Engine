@@ -20,7 +20,7 @@ once if a flaky model turn returns empty output):
 | 1 | `news_ingestion_agent` | Searches the web (Google Search grounding) for recent M&A deals related to the target | Yes |
 | 2 | `signal_extraction_agent` | Turns raw news into structured signal objects (buyer, sector, multiple, urgency…) | Yes |
 | 3 | `buyer_profiling_agent` | Researches each buyer and emits structured **JSON** profiles (sector/geo focus, financial capacity, deal-size range) | Yes |
-| 4 | `deal_matching_agent` | **Pure Python** — scores & ranks buyers vs. the target, applies hard exclusions | No |
+| 4 | `deal_matching_agent` | **Pure Python** – scores & ranks buyers vs. the target, applies hard exclusions | No |
 | 5 | `strategy_agent` | Classifies ranked buyers into Tier 1/2/3 and writes an outreach strategy | Yes |
 
 Supporting modules: `tools/` (ECB currency conversion, deterministic buyer
@@ -287,7 +287,7 @@ a durable, reviewable record of evaluation runs.
 
 | Symptom | Cause | Fix |
 |---------|-------|-----|
-| `429 RESOURCE_EXHAUSTED … limit: 5` | Free-tier caps (**5 requests/minute** and a small daily quota, per project) — a full pipeline run needs **~15–25 model calls**, so the free tier cannot complete one | **Enable pay-as-you-go billing** — this is effectively required for end-to-end runs (a run costs only a few cents). Waiting and retrying only postpones the next 429; a new key does **not** help (caps are per project, not per key). |
+| `429 RESOURCE_EXHAUSTED … limit: 5` | Free-tier caps (**5 requests/minute** and a small daily quota, per project) – a full pipeline run needs **~15-25 model calls**, so the free tier cannot complete one | **Enable pay-as-you-go billing** – this is effectively required for end-to-end runs (a run costs only a few cents). Waiting and retrying only postpones the next 429; a new key does **not** help (caps are per project, not per key). |
 | `503 UNAVAILABLE … model is overloaded` | Google-side transient overload of the model | Retry shortly; it clears on its own. |
 | Only the first word of my request is used | Missing quotes on a one-shot run | Wrap the request in quotes, or use interactive mode (`python3 run.py`). |
 | `GOOGLE_API_KEY` errors / auth failures | Key missing or wrong in `orchestrator/.env` | Check the key and that `GOOGLE_GENAI_USE_VERTEXAI=FALSE` is set. |
