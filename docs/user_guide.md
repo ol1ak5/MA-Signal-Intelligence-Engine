@@ -245,13 +245,13 @@ observability/logs/full_trace.json
 
 The `evals/` folder holds a small evaluation suite. Each eval prints a scorecard
 **and** saves a timestamped JSON results file to `evals/results/` (plus a one-line
-row in `evals/results/history.md`) — kept as evidence of every run.
+row in `evals/results/history.md`) – kept as evidence of every run.
 
 | Eval | Checks | Uses model? |
 |------|--------|-------------|
-| `eval_scoring.py` | Deterministic buyer scoring & ranking — match scores, hard exclusions, unknown-size handling | No |
-| `eval_parser.py` | The buyer-profile JSON parser — clean / fenced / prose-wrapped / bare-array / truncated / malformed input | No |
-| `eval_memory.py` | Long-term memory round-trip — save, filtered search, ordering, validation | No |
+| `eval_scoring.py` | Deterministic buyer scoring & ranking – match scores, hard exclusions, unknown-size handling | No |
+| `eval_parser.py` | The buyer-profile JSON parser – clean / fenced / prose-wrapped / bare-array / truncated / malformed input | No |
+| `eval_memory.py` | Long-term memory round-trip – save, filtered search, ordering, validation | No |
 | `eval_extraction.py` | Prompt → structured target (class / sector / country), scored by field match vs an 80% threshold | **Yes** (`gemini-2.5-flash-lite`) |
 
 Three of the four are **fully offline** (no API, no rate limits) and pass
@@ -278,7 +278,7 @@ scoring evaluation  (no model)
 Saved: evals/results/scoring_2026-07-04_08-55-14.json
 ```
 
-Each results JSON records the timestamp, every check, the score, and PASS/FAIL —
+Each results JSON records the timestamp, every check, the score, and PASS/FAIL –
 a durable, reviewable record of evaluation runs.
 
 ---
