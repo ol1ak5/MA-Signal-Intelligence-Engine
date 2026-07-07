@@ -11,9 +11,9 @@
 
 ## 📑 Table of Contents
 
-1. [Problem](#-problem)
-2. [Solution](#-solution)
-3. [Value](#-value-what-it-delivers)
+1. [The Problem](#-the-problem)
+2. [The Solution](#-the-solution)
+3. [Value for M&A Teams](#-value-for-M&A-Teams)
 4. [Quick Start](#-quick-start)
 5. [Project Structure](#-project-structure)
 6. [Architecture](#-architecture)
@@ -29,7 +29,7 @@
 
 ---
 
-## 🎯 Problem
+## 🎯 The Problem
 
 M&A is fundamentally a **signal interpretation problem under uncertainty**.
 
@@ -48,7 +48,7 @@ This is an **intelligence** problem. **Agents** can solve it.
 
 ---
 
-## 💡 Solution
+## 💡 The Solution
 
 The **M&A Signal Intelligence Engine** is a sequential multi-agent system built with Google ADK and powered by **Gemini 2.5 Flash** (with **Gemini 2.5 Flash-Lite** for fast request parsing). It transforms fragmented market signals into actionable buyer intelligence.
 
@@ -58,7 +58,7 @@ It does not simply summarize news. It answers:
 
 ---
 
-## 💎 Value (What It Delivers)
+## 💎 Value for M&A Teams
 
 | Outcome | Description |
 |---|---|
