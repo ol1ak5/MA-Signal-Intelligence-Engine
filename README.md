@@ -542,7 +542,7 @@ The M&A Signal Intelligence Engine automates buyer targeting end to end. It inge
 
 Rather than replacing M&A team judgment, the engine amplifies it. It handles the time-intensive work of scanning news, profiling buyers, and scoring fit, so professionals can focus on relationship management and negotiations. With each run, the system becomes smarter as buyer profiles and transaction history accumulate, making future analysis more accurate.
 
-### Key Strengths
+### Core Advantages
 
 1. **Signal, not noise.** Buyer targeting grounded in live market intelligence, not static databases and instinct. Every recommendation reflects what's happening in the market right now.
 
