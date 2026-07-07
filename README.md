@@ -312,7 +312,7 @@ multiple: N/A
 
 | Property | Detail |
 |---|---|
-| **Type** | `LlmAgent` (Gemini 2.5 Flash, `temperature=0.2`, capped thinking budget) — wrapped in an ADK `LoopAgent` that retries once if a flaky model turn returns empty output |
+| **Type** | `LlmAgent` (Gemini 2.5 Flash, `temperature=0.2`, capped thinking budget) wrapped in an ADK `LoopAgent` that retries once if a flaky model turn returns empty output |
 | **Tools** | `google_search`, `convert_to_eur`, `save_transaction`, `search_transactions` |
 | **Input** | Structured signals from Agent 2 |
 | **Role** | For each buyer, builds a structured profile with financial data and deal history, recalls precedent deals from the memory bank and saves new ones |
@@ -358,9 +358,9 @@ multiple: N/A
 | `financial_capacity` | 15% | 1.0 strong; 0.6 moderate; 0.2 weak (also hard-excluded); unknown → deal-activity proxy (see below) |
 | `expansion_mode` | 15% | 1.0 acquiring; 0.5 neutral; 0.0 divesting/deleveraging |
 
-#### **Financial capacity:** weak = unprofitable (negative last-year EBITDA or distress) – slow or slightly negative growth only makes a profitable buyer `moderate`, never `weak`.
+**Size fit:** all the asset classes are sized in EUR, except for renewable portfolios (MW capacity if available). Buyers announcing investment plans earn 1.0 if `investment_plan_eur_m` covers the target's size.
 
-**Size fit logic:** all the asset classes are sized in EUR, except for renewable portfolios (MW capacity if available). Buyers announcing investment plans earn 1.0 if `investment_plan_eur_m` covers the target's size.
+**Financial capacity:** weak = unprofitable (negative last-year EBITDA or distress) – slow or slightly negative growth only makes a profitable buyer `moderate`, never `weak`.
 
 **Deal-activity proxy:** used when `financial_capacity` is `unknown`, common for sovereign / private funds whose CAGR can't be computed: `0` deals → 0.2; `1-2` → 0.5; `3-5` → 0.7; `6+` → 0.9. Capped at 0.9 (never a full "strong"), and credited in full only when the buyer also has recent activity.
 
@@ -378,7 +378,7 @@ multiple: N/A
 | Property | Detail |
 |---|---|
 | **Type** | `LlmAgent` (Gemini 2.5 Flash) |
-| **Tools** | None — receives the ranked list via prompt injection (`{deal_matching_results}`) |
+| **Tools** | None – receives the ranked list via prompt injection (`{deal_matching_results}`) |
 | **Input** | `deal_matching_results` from session state |
 | **Role** | Translates the ranked buyer list into a concrete tiered outreach strategy with deal close probability |
 | **Output** | Tiered buyer list with rationale, `deal_close_probability`, and `overall_strategy_note` (plain text, terminal-friendly) |
@@ -502,34 +502,6 @@ python3 evals/eval_extraction.py   # uses Flash-Lite (needs quota)
 
 ---
 
-## 🏁 Conclusion
-
-### The Problem
-
-M&A teams often rely on static databases and instinct, which leads to missed buyers, weak outreach, and slower execution. Without timely market intelligence, the time is wasted on players who lack capacity, strategic fit, or current appetite, while the entire process risks leaving value on the table.
-
-### The Solution
-
-The M&A Signal Intelligence Engine automates buyer targeting end to end. It ingests real-time market news, extracts structured M&A signals, builds dynamic buyer profiles, and ranks every potential buyer in a single pipeline run. The output is a tiered outreach strategy grounded in live market data, not static assumptions.
-
-### Value for M&A Teams
-
-Rather than replacing M&A team judgment, the engine amplifies it. It handles the time-intensive work of scanning news, profiling buyers, and scoring fit, so professionals can focus on relationship management and negotiations. With each run, the system becomes smarter as buyer profiles and transaction history accumulate, making future analysis more accurate.
-
-### Key Strengths
-
-1. **Hybrid intelligence.** Gemini 2.5 Flash handles language understanding, signal interpretation, and strategy narrative. Python handles the math. Scoring is fully deterministic and auditable: given the same buyer profiles, the same evidence always produces the same ranking. The candidate pool itself is live — it reflects the market news at run time, and grows more informed as the memory bank accumulates precedents — so the recommendation list may vary between runs while the judgment behind it never does.
-
-2. **Persistent transaction memory.** The memory bank compounds across pipeline runs. After multiple asset searches, the engine carries a richer picture of each buyer's sector focus, geographic preferences, and deal frequency, improving targeting accuracy over time.
-
-3. **Full observability.** Every run produces a structured decision trace with per-agent latency, counts, and buyer scores. There are no black boxes: every recommendation is traceable to its inputs.
-
-4. **Hallucination guardrails.** Anti-hallucination rules are embedded into every LLM agent's instruction set. Agents are prohibited from inventing financial figures or filling fields with guesses. All data must be sourced from real-time search results or passed explicitly from a prior agent.
-
-5. **Tested by evaluation.** A dedicated eval suite validates the deterministic core (scoring, JSON parsing, memory) and the model-based extraction, with saved, timestamped evidence for every run.
-
----
-
 ## 🎥 Demo Video
 
 📺 **[Watch the Demo on YouTube](https://youtu.be/8YsdOT6R3fs)**
@@ -553,6 +525,34 @@ The demo covers:
 | **Concepts Implemented** | Multi-Agent Systems · Tools · Sessions & Memory · Context engineering · Observability · Agent Evaluation |
 | **Concepts Count** | 6 of 8 (minimum: 3) |
 | **Bonus Targets** | ✅ Gemini primary model · ✅ YouTube Demo |
+
+---
+
+## 🏁 Conclusion
+
+### The Problem
+
+M&A teams often rely on static databases and instinct, which leads to missed buyers, weak outreach, and slower execution. Without timely market intelligence, the time is wasted on players who lack capacity, strategic fit, or current appetite, while the entire process risks leaving value on the table.
+
+### The Solution
+
+The M&A Signal Intelligence Engine automates buyer targeting end to end. It ingests real-time market news, extracts structured M&A signals, builds dynamic buyer profiles, and ranks every potential buyer in a single pipeline run. The output is a tiered outreach strategy grounded in live market data, not static assumptions.
+
+### Value for M&A Teams
+
+Rather than replacing M&A team judgment, the engine amplifies it. It handles the time-intensive work of scanning news, profiling buyers, and scoring fit, so professionals can focus on relationship management and negotiations. With each run, the system becomes smarter as buyer profiles and transaction history accumulate, making future analysis more accurate.
+
+### Key Strengths
+
+1. **Signal, not noise.** Buyer targeting grounded in live market intelligence, not static databases and instinct. Every recommendation reflects what's happening in the market right now.
+
+2. **Judgment, not guesswork.** Deterministic, auditable scoring, automated end to end, amplifies the deal team, never replaces it. Every ranking is grounded in evidence and fully explainable, leaving the final call in expert hands. 
+
+3. **Automated, not manual.** The pipeline scans, profiles, and scores buyers end to end, with no manual work in between, freeing the deal team to focus on relationships and negotiations, not data entry.
+
+4. **Memory, not a blank slate.** A transaction memory bank that compounds accuracy with every pipeline run, carrying forward a richer picture of each buyer's sector focus, geography, and deal appetite.
+
+5. **Trust, not black boxes.** Full observability and hallucination guardrails, so every recommendation is traceable and grounded. Nothing is invented. Nothing runs as a black box.
 
 ---
 
