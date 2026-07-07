@@ -565,6 +565,6 @@ The code in this repository is licensed under the **[Apache License, Version 2.0
 
 ---
 
-*Built for AI Agents: Intensive Vibe Coding Capstone Project · Agents for Business *
+*Built for AI Agents: Intensive Vibe Coding Capstone Project · Agents for Business*
 
 *Powered by Google ADK · Gemini 2.5 Flash*
