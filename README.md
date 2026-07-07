@@ -523,7 +523,7 @@ The demo covers:
 | **Competition** | AI Agents: Intensive Vibe Coding Capstone Project |
 | **Track** | Agents for Business |
 | **Concepts Implemented** | Multi-Agent Systems · Tools · Sessions & Memory · Context engineering · Observability · Agent Evaluation |
-| **Concepts Count** | 6 of 8 (minimum: 3) |
+| **Concepts Count** | 6 out of 8 (minimum: 3) |
 | **Bonus Targets** | ✅ Gemini primary model · ✅ YouTube Demo |
 
 ---
