@@ -195,9 +195,7 @@ This hybrid design **avoids hallucinations in financial decision-making**. Gemin
 runs, even for the same target. The candidate pool is **live** – it reflects
 whatever M&A news the web search surfaces at run time – and the **memory bank
 grows with every run**, so buyer profiles become better-informed over time
-(richer deal-size ranges and comparable-deal counts). What never varies is the
-judgment: given the same buyer profiles, the deterministic scorer always
-produces the same ranking.
+(richer deal-size ranges and comparable-deal counts).
 
 ---
 
