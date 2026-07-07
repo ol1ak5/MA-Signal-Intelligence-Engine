@@ -282,7 +282,7 @@ capstone_project/
 | **Type** | `LlmAgent` (Gemini 2.5 Flash, `temperature=0.2`) |
 | **Tools** | `convert_to_eur` (custom) |
 | **Input** | Raw deal data from Agent 1 |
-| **Role** | Transforms unstructured deal data into typed M&A signal objects; converts any non-EUR figures to EUR. Never refuses — if Agent 1 returned no usable deals, it simply says so |
+| **Role** | Transforms unstructured deal data into typed M&A signal objects; converts any non-EUR figures to EUR. Never refuses. If Agent 1 returned no usable deals, it simply says so |
 | **Output** | Structured signal objects as **plain text** (one `field: value` block per deal — deliberately not JSON, so downstream agents don't mimic the wrong output shape) |
 
 **Example transformation:**
