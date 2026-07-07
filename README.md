@@ -54,7 +54,7 @@ The **M&A Signal Intelligence Engine** is a sequential multi-agent system built 
 
 It does not simply summarize news. It answers:
 
-> **"Who is actually likely to buy this asset right now – and why?"**
+> **"Who is actually likely to buy this asset right now, and why?"**
 
 ---
 
